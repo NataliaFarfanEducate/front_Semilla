@@ -1,0 +1,32 @@
+
+
+.signup-page .form-container {
+  min-width: 400px;
+  height: 610px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+/* Input de ubicación */
+.signup-page .location-input input {
+  width: 100%;
+  padding-right: 2.5rem; 
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+}
+
+.signup-page .location-icon {
+  position: absolute;
+  right: 32rem;
+  width: 20px;
+  height: 20px;
+  margin-top: 0.6rem;
+  background: url("../assets/icono_ubicación.png") no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+}

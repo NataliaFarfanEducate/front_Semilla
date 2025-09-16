@@ -1,0 +1,30 @@
+
+.login-page .form-container {
+  min-width: 350px;
+  height: 430px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-page .required {
+  color: var(--color-required);
+}
+
+.login-page .forgot-password {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-forgot-link);
+  text-decoration: none;
+}
+.login-page .forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-page .form-title {
+  font-weight: 500; 
+  font-size: 1.3rem;
+}

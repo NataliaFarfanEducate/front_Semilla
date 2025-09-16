@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semilla Azul - Inicio</title>
+    <link rel="stylesheet" href="../css/main/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="home-page">
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="../css/assets/logo-semilla.jpeg" alt="Semilla Azul Logo" class="logo">
+            <h1 class="site-title">
+                SEMILLA <span class="highlight">AZUL</span>
+            </h1>
+        </div>
+
+        <div class="user-actions">
+            <a href="iniciar-sesion.html" class="btn">Iniciar Sesión</a>
+            <a href="crear-cuenta.html" class="btn">Crear Cuenta</a>
+            <span class="language-select">Idioma</span>
+        </div>
+    </header>
+
+
+    <button id="menu-toggle" class="menu-toggle" aria-controls="main-sidebar" aria-expanded="false"
+        aria-label="Abrir menú de navegación">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+    </button>
+
+    <aside id="main-sidebar" class="main-sidebar closed-sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html" class="active-link" aria-current="page">Inicio</a></li>
+                <li><a href="zona-piloto.html" class="active-link">Zona Piloto</a></li>
+                <li><a href="que-sucede.html" class="active-link">¿Qué sucede hoy?</a></li>
+                <li><a href="participa.html" class="active-link">Participa</a></li>
+                <li><a href="boletines.html" class="active-link">Boletines e Informes</a></li>
+                <li><a href="quienes-somos.html" class="active-link">¿Quiénes Somos?</a></li>
+                <li><a href="seedgame.html" class="active-link">SeedGame</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-info">
+            <figure class="sidebar-logo" role="img" aria-label="Logo de Semilla Azul">
+                <div class="logo-inner"></div>
+            </figure>
+        </div>
+    </aside>
+
+    <div class="page-background">
+        <main class="main">
+            <section class="image-carousel-section" aria-label="Carrusel de imágenes de la comunidad">
+                <div class="carousel-container">
+                    <button id="prev-btn" class="carousel-button" aria-label="Diapositiva anterior"></button>
+
+                    <div class="carousel-track" role="group" aria-live="polite">
+                        <figure id="slide-1" class="carousel-slide" role="tabpanel">
+                            <img src="../css/assets/Captura de pantalla 2025-08-13 214310.png"
+                                alt="Laguna tropical con vegetación exuberante." loading="lazy">
+                        </figure>
+                        <figure id="slide-2" class="carousel-slide" role="tabpanel" aria-hidden="true">
+                            <img src="../css/assets/Captura de pantalla 2025-08-13 214513.png"
+                                alt="Bote de madera navegando en un lago tranquilo." loading="lazy">
+                        </figure>
+                        <figure id="slide-3" class="carousel-slide" role="tabpanel" aria-hidden="true">
+                            <img src="../css/assets/Captura de pantalla 2025-08-13 214645.png"
+                                alt="Espectacular atardecer con reflejos en la superficie del agua." loading="lazy">
+                        </figure>
+                        <figure id="slide-4" class="carousel-slide" role="tabpanel" aria-hidden="true">
+                            <img src="../css/assets/Parroquia.png"
+                                alt="Parroquia central de coyaima." loading="lazy">
+                        </figure>
+                        
+                    </div>
+
+                    <button id="next-btn" class="carousel-button" aria-label="Siguiente diapositiva"></button>
+                </div>
+
+                <div class="carousel-indicators" role="tablist">
+                    <span class="indicator active-indicator" role="tab" aria-selected="true"
+                        aria-controls="slide-1"></span>
+                    <span class="indicator" role="tab" aria-selected="false" aria-controls="slide-2"></span>
+                    <span class="indicator" role="tab" aria-selected="false" aria-controls="slide-3"></span>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <div class="info-content">
+                    <div class="info-text">
+                        <h2>¿De qué trata esto?</h2>
+                        <p>
+                            Un sistema que permite monitorear en tiempo real la calidad del agua, usando sensores y una
+                            aplicación fácil de usar. Pensado para empoderar a las comunidades con información clara,
+                            alertas tempranas y herramientas para tomar decisiones que protejan su recurso más valioso:
+                            el
+                            agua.
+                        </p>
+                    </div>
+                    <div class="info-image">
+                        <img src="../css/assets/Gemini_Generated_Image_i3tt2ii3tt2ii3tt.png"
+                            alt="Dispositivo de monitoreo de agua de alta tecnología flotando en un cuerpo de agua.">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

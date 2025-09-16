@@ -1,0 +1,105 @@
+
+
+.game-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  padding: var(--spacing-lg);
+  text-align: center;
+  color: white;
+}
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  max-width: 960px;
+  width: 100%;
+  z-index: 1;
+}
+
+.game-icon-container {
+  width: 80px;
+  height: 80px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.game-icon {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, var(--color-accent), #1a1a1a);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 15px var(--color-accent);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  70% { transform: scale(1.2); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.page-title,
+.game-description,
+.feature-title,
+.feature-text {
+  color: white !important;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.game-description {
+  max-width: 700px;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.game-features-grid {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 260px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cta-button {
+  margin-top: var(--spacing-sm);
+  padding: 0.75rem 2rem;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--color-primary);
+}

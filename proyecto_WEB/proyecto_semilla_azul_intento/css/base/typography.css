@@ -1,0 +1,55 @@
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary, 'Arial', sans-serif);
+  color: var(--color-heading, #333);
+  margin-bottom: 0.5rem;
+  font-weight: normal; 
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700; 
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500; 
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+
+p {
+  margin-bottom: 1rem;
+  color: var(--color-text, #444);
+  font-weight: 400;
+}
+
+a {
+  color: var(--color-forgot-link);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 400;
+}
+
+a:hover {
+  color: var(--color-accent, #005fa3);
+}

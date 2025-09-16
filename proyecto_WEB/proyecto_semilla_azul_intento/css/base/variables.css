@@ -1,0 +1,23 @@
+
+:root {
+  --color-title: #0d2036;
+  --color-primary: #226f6b;    
+  --color-accent: #2da9e3;    
+  --color-heading: #1a1a1a;
+  --color-text: #333333;
+  --color-background: #f9f9f9;
+  --color-white: #ffffff;
+
+  --color-required: #d9534f;  
+  --color-forgot-link: #445de7; 
+
+  --font-primary: 'Inria Serif', serif;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --radius-sm: 3px;
+  --radius-md: 6px;
+
+--login-bg: url("../assets/fondo_azul_marypiedra.jpeg"); 
+
+}
