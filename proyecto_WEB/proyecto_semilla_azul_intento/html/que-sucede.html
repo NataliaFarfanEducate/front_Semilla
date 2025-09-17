@@ -18,9 +18,15 @@
         </div>
 
         <div class="user-actions">
-            <a href="iniciar-sesion.html" class="btn">Iniciar Sesión</a>
-            <a href="crear-cuenta.html" class="btn">Crear Cuenta</a>
-            <span class="language-select">Idioma</span>
+            <a href="iniciar-sesion.html" class="btn" data-i18n="login">Iniciar Sesión</a>
+            <a href="signup.html" class="btn" data-i18n="signup">Crear Cuenta</a>
+            <button id="lang-toggle" class="btn">🌐 Idioma</button>
+            
+            <div class="botones-accesibilidad">
+                <button id="aumentarFuente">+</button>
+                <button id="disminuirFuente">-</button>
+                <button id="contraste">🌙</button>
+            </div>
         </div>
     </header>
 
@@ -34,13 +40,13 @@
     <aside id="main-sidebar" class="main-sidebar closed-sidebar">
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="index.html" class="active-link" aria-current="page">Inicio</a></li>
-                <li><a href="zona-piloto.html" class="active-link">Zona Piloto</a></li>
-                <li><a href="que-sucede.html" class="active-link">¿Qué sucede hoy?</a></li>
-                <li><a href="participa.html" class="active-link">Participa</a></li>
-                <li><a href="boletines.html" class="active-link">Boletines e Informes</a></li>
-                <li><a href="quienes-somos.html" class="active-link">¿Quiénes Somos?</a></li>
-                <li><a href="seedgame.html" class="active-link">SeedGame</a></li>
+                <li><a href="index.html" class="active-link" data-i18n="menu.home">Inicio</a></li>
+                <li><a href="zona-piloto.html" class="active-link" data-i18n="menu.pilot">Zona Piloto</a></li>
+                <li><a href="que-sucede.html" class="active-link" data-i18n="menu.happening">¿Qué sucede hoy?</a></li>
+                <li><a href="participa.html" class="active-link" data-i18n="menu.participate">Participa</a></li>
+                <li><a href="boletines.html" class="active-link" data-i18n="menu.reports">Boletines e Informes</a></li>
+                <li><a href="quienes-somos.html" class="active-link" data-i18n="menu.about">¿Quiénes Somos?</a></li>
+                <li><a href="seedgame.html" class="active-link" data-i18n="menu.game">SeedGame</a></li>
             </ul>
         </nav>
         <div class="sidebar-info">
@@ -50,41 +56,40 @@
         </div>
     </aside>
     <main class="main-content">
-            <div class="info-header">
-                <h1 class="page-title">¿Qué sucede hoy?</h1>
-            </div>
+        <div class="info-header">
+            <h1 class="page-title" data-i18n="happeningTitle">¿Qué sucede hoy?</h1>
+        </div>
 
-            <div class="search-bar-container">
-                <input type="text" class="search-input" placeholder="¿Qué te interesa saber hoy?">
-                <span class="search-icon">🔍</span>
-            </div>
+        <div class="search-bar-container">
+            <input type="text" class="search-input" placeholder="¿Qué te interesa saber hoy?" data-i18n-placeholder="searchPlaceholder">
+            <span class="search-icon">🔍</span>
+        </div>
 
-            <div class="info-grid">
-                <article class="info-card">
-                    <a href="alertas.html" class="card-link"
-                        aria-label="Ver alertas recientes sobre la calidad del agua.">
-                        <h2 class="info-card-title">Alertas Recientes</h2>
-                        <p class="info-card-text">Mantente informado sobre cambios en la calidad del agua.</p>
-                    </a>
-                </article>
+        <div class="info-grid">
+            <article class="info-card">
+                <a href="alertas.html" class="card-link" aria-label="Ver alertas recientes sobre la calidad del agua.">
+                    <h2 class="info-card-title" data-i18n="alertsTitle">Alertas Recientes</h2>
+                    <p class="info-card-text" data-i18n="alertsText">Mantente informado sobre cambios en la calidad del agua.</p>
+                </a>
+            </article>
 
-                <article class="info-card">
-                    <a href="reportes.html" class="card-link"
-                        aria-label="Consultar los datos más recientes de los sensores.">
-                        <h2 class="info-card-title">Reportes Diarios</h2>
-                        <p class="info-card-text">Consulta los datos más recientes de los sensores.</p>
-                    </a>
-                </article>
+            <article class="info-card">
+                <a href="reportes.html" class="card-link" aria-label="Consultar los datos más recientes de los sensores.">
+                    <h2 class="info-card-title" data-i18n="reportsTitle">Reportes Diarios</h2>
+                    <p class="info-card-text" data-i18n="reportsText">Consulta los datos más recientes de los sensores.</p>
+                </a>
+            </article>
 
-                <article class="info-card">
-                    <a href="noticias.html" class="card-link"
-                        aria-label="Leer las últimas noticias sobre la conservación del agua.">
-                        <h2 class="info-card-title">Noticias</h2>
-                        <p class="info-card-text">Últimas noticias sobre conservación del agua.</p>
-                    </a>
-                </article>
-            </div>
+            <article class="info-card">
+                <a href="noticias.html" class="card-link" aria-label="Leer las últimas noticias sobre la conservación del agua.">
+                    <h2 class="info-card-title" data-i18n="newsTitle">Noticias</h2>
+                    <p class="info-card-text" data-i18n="newsText">Últimas noticias sobre conservación del agua.</p>
+                </a>
+            </article>
+        </div>
     </main>
 </body>
-
+<script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
+<script src="../js/translations/que-sucede.js"></script>
+<script src="../js/accesibility/accesibility.js"></script>
 </html>

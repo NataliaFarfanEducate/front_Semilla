@@ -18,9 +18,15 @@
       </div>
 
       <div class="user-actions">
-        <a href="iniciar-sesion.html" class="btn">Iniciar Sesión</a>
-        <a href="crear-cuenta.html" class="btn">Crear Cuenta</a>
-        <span class="language-select">Idioma</span>
+        <a href="iniciar-sesion.html" class="btn" data-i18n="login">Iniciar Sesión</a>
+        <a href="signup.html" class="btn" data-i18n="signup">Crear Cuenta</a>
+        <button id="btn-toggle-lang" class="btn">🌐 Idioma</button>
+
+        <div class="botones-accesibilidad">
+            <button id="aumentarFuente">+</button>
+            <button id="disminuirFuente">-</button>
+            <button id="contraste">🌙</button>
+        </div>
       </div>
     </header>
     <button
@@ -38,33 +44,17 @@
     <aside id="main-sidebar" class="main-sidebar closed-sidebar">
       <nav class="sidebar-nav">
         <ul>
-          <li>
-            <a href="index.html" class="active-link" aria-current="page"
-              >Inicio</a
-            >
-          </li>
-          <li>
-            <a href="zona-piloto.html" class="active-link">Zona Piloto</a>
-          </li>
-          <li>
-            <a href="que-sucede.html" class="active-link">¿Qué sucede hoy?</a>
-          </li>
-          <li><a href="participa.html" class="active-link">Participa</a></li>
-          <li>
-            <a href="boletines.html" class="active-link">Boletines e Informes</a>
-          </li>
-          <li>
-            <a href="quienes-somos.html" class="active-link">¿Quiénes Somos?</a>
-          </li>
-          <li><a href="seedgame.html" class="active-link">SeedGame</a></li>
+          <li><a href="index.html" class="active-link" data-i18n="nav.home">Inicio</a></li>
+          <li><a href="zona-piloto.html" class="active-link" data-i18n="nav.pilot">Zona Piloto</a></li>
+          <li><a href="que-sucede.html" class="active-link" data-i18n="nav.news">¿Qué sucede hoy?</a></li>
+          <li><a href="participa.html" class="active-link" data-i18n="nav.participate">Participa</a></li>
+          <li><a href="boletines.html" class="active-link" data-i18n="nav.reports">Boletines e Informes</a></li>
+          <li><a href="quienes-somos.html" class="active-link" data-i18n="nav.about">¿Quiénes Somos?</a></li>
+          <li><a href="seedgame.html" class="active-link" data-i18n="nav.seedgame">SeedGame</a></li>
         </ul>
       </nav>
       <div class="sidebar-info">
-        <figure
-          class="sidebar-logo"
-          role="img"
-          aria-label="Logo de Semilla Azul"
-        >
+        <figure class="sidebar-logo" role="img" aria-label="Logo de Semilla Azul">
           <div class="logo-inner"></div>
         </figure>
       </div>
@@ -73,8 +63,8 @@
       <section class="about-us-section">
         <div class="about-content-wrapper">
           <div class="about-text">
-            <h2 class="about-title">¿Quiénes Somos?</h2>
-            <p class="about-intro">
+            <h2 class="about-title" data-i18n="about.title">¿Quiénes Somos?</h2>
+            <p class="about-intro" data-i18n="about.intro">
               Somos un equipo multidisciplinario comprometido con la protección
               y conservación del recurso hídrico. Nuestra misión es empoderar a
               las comunidades con tecnología accesible para el monitoreo de la
@@ -82,16 +72,16 @@
             </p>
             <div class="vision-values">
               <div class="value-box">
-                <h3>¿Qué buscamos?</h3>
-                <p>
+                <h3 data-i18n="about.goalTitle">¿Qué buscamos?</h3>
+                <p data-i18n="about.goalText">
                   Un mundo donde todas las comunidades tengan acceso a agua
                   limpia y segura, respaldado por sistemas de monitoreo
                   transparentes y participativos.
                 </p>
               </div>
               <div class="value-box">
-                <h3>¿Qué queremos?</h3>
-                <p>
+                <h3 data-i18n="about.wantTitle">¿Qué queremos?</h3>
+                <p data-i18n="about.wantText">
                   Democratizar el acceso a información sobre la calidad del agua
                   mediante tecnología de sensores y aplicaciones intuitivas que
                   permitan a las comunidades tomar decisiones informadas.
@@ -101,7 +91,7 @@
           </div>
           <div class="about-image">
             <img
-              src="./css/assets/quienes-somos.jpg"
+              src="../css/assets/Gemini_Generated_Image_i3tt2ii3tt2ii3tt.png"
               alt="Gota de agua con chip"
             />
           </div>
@@ -109,4 +99,7 @@
       </section>
     </main>
   </body>
+  <script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
+  <script src="../js/translations/quienes-somos.js"></script>
+  <script src="../js/accesibility/accesibility.js"></script>
 </html>

@@ -17,9 +17,17 @@
 
     <div class="user-actions">
       <a href="iniciar-sesion.html" class="btn-light">Iniciar Sesión</a>
-      <a href="crear-cuenta.html" class="btn-light">Crear Cuenta</a>
+      <a href="signup.html" class="btn-light">Crear Cuenta</a>
 
-      <span class="language-select">Idioma</span>
+      <span class="language-select">
+        <button id="btn-lang-toggle">🌐 Idioma</button>
+      </span>
+
+      <div class="botones-accesibilidad">
+          <button id="aumentarFuente">+</button>
+          <button id="disminuirFuente">-</button>
+          <button id="contraste">🌙</button>
+      </div>
     </div>
   </header>
   
@@ -32,13 +40,13 @@
     <aside id="main-sidebar" class="main-sidebar closed-sidebar">
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="index.html" class="active-link" aria-current="page">Inicio</a></li>
-                <li><a href="zona-piloto.html"class="active-link">Zona Piloto</a></li>
-                <li><a href="que-sucede.html"class="active-link">¿Qué sucede hoy?</a></li>
-                <li><a href="participa.html"class="active-link">Participa</a></li>
-                <li><a href="boletines.html"class="active-link">Boletines e Informes</a></li>
-                <li><a href="quienes-somos.html"class="active-link">¿Quiénes Somos?</a></li>
-                <li><a href="seedgame.html"class="active-link">SeedGame</a></li>
+              <li><a href="index.html" class="active-link" aria-current="page" data-i18n="menu.home">Inicio</a></li>
+              <li><a href="zona-piloto.html" class="active-link" data-i18n="menu.pilot">Zona Piloto</a></li>
+              <li><a href="que-sucede.html" class="active-link" data-i18n="menu.news">¿Qué sucede hoy?</a></li>
+              <li><a href="participa.html" class="active-link" data-i18n="menu.participate">Participa</a></li>
+              <li><a href="boletines.html" class="active-link" data-i18n="menu.reports">Boletines e Informes</a></li>
+              <li><a href="quienes-somos.html" class="active-link" data-i18n="menu.about">¿Quiénes Somos?</a></li>
+              <li><a href="seedgame.html" class="active-link" data-i18n="menu.seedgame">SeedGame</a></li>
             </ul>
         </nav>
         <div class="sidebar-info">
@@ -75,4 +83,7 @@
   </main>
 
 </body>
+<script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
+<script src="../js/translations/iniciar-sesion.js"></script>
+<script src="../js/accesibility/accesibility.js"></script>
 </html>

@@ -37,7 +37,7 @@ body.about-page::before {
 body.game-page {
   height: 100vh;
   overflow: hidden; 
-  background: url("../assets/fondo_azul_marypiedra.jpeg") no-repeat center center;
+  background-image: url("../assets/fondo_azul_marypiedra.jpeg") no-repeat center center;
   background-size: cover;
   position: relative;
 }
@@ -49,4 +49,19 @@ body.game-page::before {
   background: rgba(0, 0, 0, 0.4); 
   backdrop-filter: blur(6px);
   z-index: -1;
+}
+<!--contraste-->
+.modo-contraste {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: black !important;
+    color: rgb(255, 255, 255) !important;
+}
+body.modo-contraste h1,
+body.modo-contraste h2,
+body.modo-contraste h3,
+body.modo-contraste a,
+body.modo-contraste p,
+body.modo-contraste label,
+body.modo-contraste span{
+  color: #fff !important;
 }

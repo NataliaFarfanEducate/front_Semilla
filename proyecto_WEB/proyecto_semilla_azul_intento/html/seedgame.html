@@ -18,9 +18,15 @@
     </div>
 
     <div class="user-actions">
-      <a href="iniciar-sesion.html" class="btn">Iniciar Sesión</a>
-      <a href="crear-cuenta.html" class="btn">Crear Cuenta</a>
-      <span class="language-select">Idioma</span>
+      <a href="iniciar-sesion.html" class="btn" data-i18n="login">Iniciar Sesión</a>
+      <a href="signup.html" class="btn" data-i18n="signup">Crear Cuenta</a>
+      <button id="btn-lang" class="btn">🌐 Idioma</button>
+
+      <div class="botones-accesibilidad">
+        <button id="aumentarFuente">+</button>
+        <button id="disminuirFuente">-</button>
+        <button id="contraste">🌙</button>
+      </div>
     </div>
   </header>
 
@@ -34,14 +40,14 @@
   <aside id="main-sidebar" class="main-sidebar closed-sidebar">
     <nav class="sidebar-nav">
       <ul>
-        <li><a href="index.html" class="active-link" aria-current="page">Inicio</a></li>
-        <li><a href="zona-piloto.html" class="active-link">Zona Piloto</a></li>
-        <li><a href="que-sucede.html" class="active-link">¿Qué sucede hoy?</a></li>
-        <li><a href="participa.html" class="active-link">Participa</a></li>
-        <li><a href="boletines.html" class="active-link">Boletines e Informes</a></li>
-        <li><a href="quienes-somos.html" class="active-link">¿Quiénes Somos?</a></li>
-        <li><a href="seedgame.html" class="active-link">SeedGame</a></li>
-      </ul>
+        <li><a href="index.html" class="active-link" aria-current="page" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="zona-piloto.html" class="active-link" data-i18n="nav.pilot">Zona Piloto</a></li>
+        <li><a href="que-sucede.html" class="active-link" data-i18n="nav.today">¿Qué sucede hoy?</a></li>
+        <li><a href="participa.html" class="active-link" data-i18n="nav.participate">Participa</a></li>
+        <li><a href="boletines.html" class="active-link" data-i18n="nav.reports">Boletines e Informes</a></li>
+        <li><a href="quienes-somos.html" class="active-link" data-i18n="nav.about">¿Quiénes Somos?</a></li>
+        <li><a href="seedgame.html" class="active-link" data-i18n="nav.seedgame">SeedGame</a></li>
+    </ul>
     </nav>
     <div class="sidebar-info">
       <figure class="sidebar-logo" role="img" aria-label="Logo de Semilla Azul">
@@ -52,36 +58,40 @@
   <main class="main-content">
     <section class="game-section">
       <div class="game-content">
-        <div class="game-icon-container">
-          <span class="game-icon"></span>
-        </div>
-
-        <h2 class="page-title">¡Juega y Aprende con SeedGame!</h2>
-        <p class="game-description">
+        <h2 class="page-title" data-i18n="game.title">¡Juega y Aprende con SeedGame!</h2>
+        <p class="game-description" data-i18n="game.description">
           SeedGame es una herramienta lúdica y educativa que te permite explorar la calidad del agua de una manera
           interactiva y divertida. ¡Ayuda a la comunidad virtual a mantener su agua limpia!
         </p>
 
         <div class="game-features-grid">
           <div class="feature-card">
-            <h3 class="feature-title">Mini-juegos</h3>
-            <p class="feature-text">Desafíos de lógica y agilidad para resolver problemas de contaminación.</p>
+            <h3 class="feature-title" data-i18n="features.minigames.title">Mini-juegos</h3>
+            <p class="feature-text" data-i18n="features.minigames.text">
+              Desafíos de lógica y agilidad para resolver problemas de contaminación.
+            </p>
           </div>
           <div class="feature-card">
-            <h3 class="feature-title">Simulación</h3>
-            <p class="feature-text">Visualiza el impacto de tus decisiones en el ecosistema acuático.</p>
+            <h3 class="feature-title" data-i18n="features.simulation.title">Simulación</h3>
+            <p class="feature-text" data-i18n="features.simulation.text">
+              Visualiza el impacto de tus decisiones en el ecosistema acuático.
+            </p>
           </div>
           <div class="feature-card">
-            <h3 class="feature-title">Ranking</h3>
-            <p class="feature-text">Compite con otros jugadores y sube en la tabla de clasificación.</p>
+            <h3 class="feature-title" data-i18n="features.ranking.title">Ranking</h3>
+            <p class="feature-text" data-i18n="features.ranking.text">
+              Compite con otros jugadores y sube en la tabla de clasificación.
+            </p>
           </div>
         </div>
 
-        <a href="#" class="cta-button">Empezar a Jugar</a>
+        <a href="#" class="cta-button" data-i18n="cta.play">Empezar a Jugar</a>
       </div>
     </section>
   </main>
 
 </body>
-
+<script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
+<script src="../js/translations/seedgame.js"></script>
+<script src="../js/accesibility/accesibility.js"></script>
 </html>

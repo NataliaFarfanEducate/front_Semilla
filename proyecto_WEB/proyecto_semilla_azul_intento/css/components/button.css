@@ -48,3 +48,29 @@
   border-radius: 3px;
   transition: 0.3s;
 }
+
+.botones-accesibilidad {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  transform: translateY(-50%);
+}
+
+.botones-accesibilidad button {
+  background-color: #4b4949;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.botones-accesibilidad button:hover {
+  background-color: #226f6b;
+}

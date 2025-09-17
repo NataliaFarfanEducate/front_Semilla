@@ -18,9 +18,15 @@
         </div>
 
         <div class="user-actions">
-            <a href="iniciar-sesion.html" class="btn">Iniciar Sesión</a>
-            <a href="crear-cuenta.html" class="btn">Crear Cuenta</a>
-            <span class="language-select">Idioma</span>
+            <a href="iniciar-sesion.html" class="btn" data-i18n="login">Iniciar Sesión</a>
+            <a href="signup.html" class="btn" data-i18n="signup">Crear Cuenta</a>
+            <button id="btn-lang" class="btn">🌐 Idioma</button>
+
+            <div class="botones-accesibilidad">
+                <button id="aumentarFuente">A+</button>
+                <button id="disminuirFuente">A-</button>
+                <button id="contraste">🌙</button>
+            </div>
         </div>
 
           <!-- Botón hamburguesa -->
@@ -33,13 +39,13 @@
     <aside id="main-sidebar" class="main-sidebar closed">
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="index.html" class="active-link" aria-current="page">Inicio</a></li>
-                <li><a href="zona-piloto.html" class="active-link">Zona Piloto</a></li>
-                <li><a href="que-sucede.html" class="active-link">¿Qué sucede hoy?</a></li>
-                <li><a href="participa.html" class="active-link">Participa</a></li>
-                <li><a href="boletines.html" class="active-link">Boletines e Informes</a></li>
-                <li><a href="quienes-somos.html" class="active-link">¿Quiénes Somos?</a></li>
-                <li><a href="seedgame.html" class="active-link">SeedGame</a></li>
+                <li><a href="index.html" class="active-link" aria-current="page" data-i18n="nav.home">Inicio</a></li>
+                <li><a href="zona-piloto.html" class="active-link" data-i18n="nav.zone">Zona Piloto</a></li>
+                <li><a href="que-sucede.html" class="active-link" data-i18n="nav.today">¿Qué sucede hoy?</a></li>
+                <li><a href="participa.html" class="active-link" data-i18n="nav.participate">Participa</a></li>
+                <li><a href="boletines.html" class="active-link" data-i18n="nav.reports">Boletines e Informes</a></li>
+                <li><a href="quienes-somos.html" class="active-link" data-i18n="nav.about">¿Quiénes Somos?</a></li>
+                <li><a href="seedgame.html" class="active-link" data-i18n="nav.seedgame">SeedGame</a></li>
             </ul>
         </nav>
         <div class="sidebar-info">
@@ -51,35 +57,37 @@
     
     <main class="main-content">
         <section class="reports-section">
-        <h2 class="page-title-uno">Boletines e Informes</h2><br>
-        <div class="reports-grid">
-            <div class="report-card">
-                <h3 class="report-title">Informe Mensual - Enero 2025</h3>
-                <p class="report-description">Resumen de la calidad del agua durante el mes de enero, incluyendo
-                    análisis de tendencias y recomendaciones.</p>
-                <a href="#" class="report-link">Descargar PDF</a>
+            <h2 class="page-title-uno" data-i18n="reports.title">Boletines e Informes</h2><br>
+            <div class="reports-grid">
+                <div class="report-card">
+                    <h3 class="report-title" data-i18n="reports.monthly">Informe Mensual - Enero 2025</h3>
+                    <p class="report-description" data-i18n="reports.monthlyDesc">Resumen de la calidad del agua durante
+                        el mes de enero, incluyendo análisis de tendencias y recomendaciones.</p>
+                    <a href="#" class="report-link" data-i18n="reports.download">Descargar PDF</a>
+                </div>
+                <div class="report-card">
+                    <h3 class="report-title" data-i18n="reports.weekly">Boletín Semanal</h3>
+                    <p class="report-description" data-i18n="reports.weeklyDesc">Actualizaciones semanales sobre el
+                        estado de los sensores y alertas importantes para la comunidad.</p>
+                    <a href="#" class="report-link" data-i18n="reports.viewOnline">Ver Online</a>
+                </div>
+                <div class="report-card">
+                    <h3 class="report-title" data-i18n="reports.technical">Análisis Técnico</h3>
+                    <p class="report-description" data-i18n="reports.technicalDesc">Informes técnicos detallados sobre
+                        parámetros de calidad del agua y metodologías de medición.</p>
+                    <a href="#" class="report-link" data-i18n="reports.access">Acceder</a>
+                </div>
+                <div class="report-card">
+                    <h3 class="report-title" data-i18n="reports.guides">Guías Educativas</h3>
+                    <p class="report-description" data-i18n="reports.guidesDesc">Material educativo sobre conservación
+                        del agua y mejores prácticas para el cuidado del recurso hídrico.</p>
+                    <a href="#" class="report-link" data-i18n="reports.explore">Explorar</a>
+                </div>
             </div>
-            <div class="report-card">
-                <h3 class="report-title">Boletín Semanal</h3>
-                <p class="report-description">Actualizaciones semanales sobre el estado de los sensores y alertas
-                    importantes para la comunidad.</p>
-                <a href="#" class="report-link">Ver Online</a>
-            </div>
-            <div class="report-card">
-                <h3 class="report-title">Análisis Técnico</h3>
-                <p class="report-description">Informes técnicos detallados sobre parámetros de calidad del agua y
-                    metodologías de medición.</p>
-                <a href="#" class="report-link">Acceder</a>
-            </div>
-            <div class="report-card">
-                <h3 class="report-title">Guías Educativas</h3>
-                <p class="report-description">Material educativo sobre conservación del agua y mejores prácticas para el
-                    cuidado del recurso hídrico.</p>
-                <a href="#" class="report-link">Explorar</a>
-            </div>
-        </div>
         </section>
     </main>
 </body>
-<script src="../js/menu.js"></script>
+<script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
+<script src="../js/translations/boletines.js"></script>
+<script src="../js/accesibility/accesibility.js"></script>
 </html>

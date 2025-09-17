@@ -18,10 +18,16 @@
         </div>
 
         <div class="user-actions">
-            <a href="iniciar-sesion.html" class="btn">Iniciar Sesión</a>
-            <a href="crear-cuenta.html" class="btn">Crear Cuenta</a>
-            <span class="language-select">Idioma</span>
+            <a href="iniciar-sesion.html" class="btn" data-i18n="login">Iniciar Sesión</a>
+            <a href="signup.html" class="btn" data-i18n="signup">Crear Cuenta</a>
+            <button id="lang-toggle" class="btn">🌐 Idioma</button>
         </div>
+
+        <div class="botones-accesibilidad">
+          <button id="aumentarFuente">+</button>
+          <button id="disminuirFuente">-</button>
+          <button id="contraste">🌙</button>
+      </div>
     </header>
 
     <button id="menu-toggle" class="menu-toggle" aria-controls="main-sidebar" aria-expanded="false"
@@ -34,13 +40,13 @@
     <aside id="main-sidebar" class="main-sidebar closed-sidebar">
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="index.html" class="active-link" aria-current="page">Inicio</a></li>
-                <li><a href="zona-piloto.html" class="active-link">Zona Piloto</a></li>
-                <li><a href="que-sucede.html" class="active-link">¿Qué sucede hoy?</a></li>
-                <li><a href="participa.html" class="active-link">Participa</a></li>
-                <li><a href="boletines.html" class="active-link">Boletines e Informes</a></li>
-                <li><a href="quienes-somos.html" class="active-link">¿Quiénes Somos?</a></li>
-                <li><a href="seedgame.html" class="active-link">SeedGame</a></li>
+                <li><a href="index.html" class="active-link" aria-current="page" data-i18n="menu.home">Inicio</a></li>
+                <li><a href="zona-piloto.html" class="active-link" data-i18n="menu.zone">Zona Piloto</a></li>
+                <li><a href="que-sucede.html" class="active-link" data-i18n="menu.today">¿Qué sucede hoy?</a></li>
+                <li><a href="participa.html" class="active-link" data-i18n="menu.participate">Participa</a></li>
+                <li><a href="boletines.html" class="active-link" data-i18n="menu.reports">Boletines e Informes</a></li>
+                <li><a href="quienes-somos.html" class="active-link" data-i18n="menu.about">¿Quiénes Somos?</a></li>
+                <li><a href="seedgame.html" class="active-link" data-i18n="menu.game">SeedGame</a></li>
             </ul>
         </nav>
         <div class="sidebar-info">
@@ -51,36 +57,32 @@
     </aside>
     <main class="main-content">
         <section class="participa-section">
-            <div class="arrow arrow-left">‹</div>
-            <h2 class="page-title">¿Cómo puedes ser parte de esto?</h2>
+            <h2 class="page-title" data-i18n="section.title">¿Cómo puedes ser parte de esto?</h2>
             <div class="steps-container">
                 <div class="step-card">
-                    <h3 class="step-title">1. Cuéntanos tu historia</h3>
-                    <p class="step-text">
-                        Esto puede ser de forma anónima si el usuario lo desea, estos testimonios nos ayudan a conocer
-                        más la comunidad y a mejorar para ustedes.
+                    <h3 class="step-title" data-i18n="step1.title">1. Cuéntanos tu historia</h3>
+                    <p class="step-text" data-i18n="step1.text">
+                        Esto puede ser de forma anónima si el usuario lo desea, estos testimonios nos ayudan a conocer más la comunidad y a mejorar para ustedes.
                     </p>
                 </div>
                 <div class="step-card">
-                    <h3 class="step-title">2. Completa nuestras encuestas</h3>
-                    <p class="step-text">
-                        Por medio de estas nosotros podemos mejorar día a día por medio de sus opiniones no solo de esta
-                        página si no del sistema completo de monitoreo.
+                    <h3 class="step-title" data-i18n="step2.title">2. Completa nuestras encuestas</h3>
+                    <p class="step-text" data-i18n="step2.text">
+                        Por medio de estas nosotros podemos mejorar día a día por medio de sus opiniones no solo de esta página sino del sistema completo de monitoreo.
                     </p>
                 </div>
                 <div class="step-card">
-                    <h3 class="step-title">3. Edúcate aquí mismo</h3>
-                    <p class="step-text">
-                        Conoce por medio de nuestra página diferentes formas en las que, desde tu casa puedes filtrar
-                        este recurso tan importante.
+                    <h3 class="step-title" data-i18n="step3.title">3. Edúcate aquí mismo</h3>
+                    <p class="step-text" data-i18n="step3.text">
+                        Conoce por medio de nuestra página diferentes formas en las que, desde tu casa puedes filtrar este recurso tan importante.
                     </p>
                 </div>
             </div>
-
-            <div class="arrow arrow-right">›</div>
         </section>
     </main>
 
 </body>
-
+<script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
+<script src="../js/translations/participa.js"></script>
+<script src="../js/accesibility/accesibility.js"></script>
 </html>

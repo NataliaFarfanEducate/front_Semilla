@@ -10,7 +10,6 @@
   font-weight: 500; 
 }
 
-
 .logo-container {
   display: flex;
   align-items: center;
@@ -57,3 +56,4 @@ body.login-page .main-header .user-actions .btn-light {
 body.login-page .main-header .user-actions .language-select {
   display: inline-block;
 }
+

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+<head class="no-js">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semilla Azul - Inicio</title>
@@ -24,12 +24,17 @@
         </div>
 
         <div class="user-actions">
-            <a href="iniciar-sesion.html" class="btn">Iniciar Sesión</a>
-            <a href="crear-cuenta.html" class="btn">Crear Cuenta</a>
-            <span class="language-select">Idioma</span>
+            <a href="iniciar-sesion.html" class="btn" data-i18n="login">Iniciar Sesión</a>
+            <a href="signup.html" class="btn" data-i18n="signup">Crear Cuenta</a>
+            <button id="lang-toggle" class="btn">🌐 Idioma</button>
+
+            <div class="botones-accesibilidad">
+                <button id="aumentarFuente">+</button>
+                <button id="disminuirFuente">-</button>
+                <button id="contraste">☯</button>
+            </div>
         </div>
     </header>
-
 
     <button id="menu-toggle" class="menu-toggle" aria-controls="main-sidebar" aria-expanded="false"
         aria-label="Abrir menú de navegación">
@@ -41,13 +46,13 @@
     <aside id="main-sidebar" class="main-sidebar closed-sidebar">
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="index.html" class="active-link" aria-current="page">Inicio</a></li>
-                <li><a href="zona-piloto.html" class="active-link">Zona Piloto</a></li>
-                <li><a href="que-sucede.html" class="active-link">¿Qué sucede hoy?</a></li>
-                <li><a href="participa.html" class="active-link">Participa</a></li>
-                <li><a href="boletines.html" class="active-link">Boletines e Informes</a></li>
-                <li><a href="quienes-somos.html" class="active-link">¿Quiénes Somos?</a></li>
-                <li><a href="seedgame.html" class="active-link">SeedGame</a></li>
+                <li><a href="index.html" class="active-link" aria-current="page" data-i18n="menu.home">Inicio</a></li>
+                <li><a href="zona-piloto.html" class="active-link" data-i18n="menu.pilot">Zona Piloto</a></li>
+                <li><a href="que-sucede.html" class="active-link" data-i18n="menu.news">¿Qué sucede hoy?</a></li>
+                <li><a href="participa.html" class="active-link" data-i18n="menu.participate">Participa</a></li>
+                <li><a href="boletines.html" class="active-link" data-i18n="menu.reports">Boletines e Informes</a></li>
+                <li><a href="quienes-somos.html" class="active-link" data-i18n="menu.about">¿Quiénes Somos?</a></li>
+                <li><a href="seedgame.html" class="active-link" data-i18n="menu.seedgame">SeedGame</a></li>
             </ul>
         </nav>
         <div class="sidebar-info">
@@ -82,28 +87,15 @@
                         </figure>
                         
                     </div>
-
-                    <button id="next-btn" class="carousel-button" aria-label="Siguiente diapositiva"></button>
-                </div>
-
-                <div class="carousel-indicators" role="tablist">
-                    <span class="indicator active-indicator" role="tab" aria-selected="true"
-                        aria-controls="slide-1"></span>
-                    <span class="indicator" role="tab" aria-selected="false" aria-controls="slide-2"></span>
-                    <span class="indicator" role="tab" aria-selected="false" aria-controls="slide-3"></span>
                 </div>
             </section>
 
             <section class="info-section">
                 <div class="info-content">
                     <div class="info-text">
-                        <h2>¿De qué trata esto?</h2>
-                        <p>
-                            Un sistema que permite monitorear en tiempo real la calidad del agua, usando sensores y una
-                            aplicación fácil de usar. Pensado para empoderar a las comunidades con información clara,
-                            alertas tempranas y herramientas para tomar decisiones que protejan su recurso más valioso:
-                            el
-                            agua.
+                        <h2 data-i18n="info.title">¿De qué trata esto?</h2>
+                        <p data-i18n="info.text"> 
+                            Un sistema que permite monitorear en tiempo real la calidad del agua, usando sensores y una aplicación fácil de usar. Pensado para empoderar a las comunidades con información clara, alertas tempranas y herramientas para tomar decisiones que protejan su recurso más valioso: el agua.
                         </p>
                     </div>
                     <div class="info-image">
@@ -114,7 +106,8 @@
             </section>
         </main>
     </div>
-
+    <script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
+    <script src="../js/translations/index.js"></script>
+    <script src="../js/accesibility/accesibility.js"></script>
 </body>
-
 </html>
