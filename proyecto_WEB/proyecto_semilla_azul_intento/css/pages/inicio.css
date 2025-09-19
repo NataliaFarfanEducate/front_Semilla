@@ -128,3 +128,121 @@
 .carousel-container img:hover {
   transform: scale(1.05);
 }
+
+/* ------------------------------ */
+/*Chat flotante*/
+
+/* Estilos para el botón flotante */
+#chat-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 1px solid #226f6b;
+    background-color: #fff;
+    color: #226f6b;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#chat-toggle-btn:hover {
+    background-color: #226f6b;
+    color: #fff;
+}
+
+/* Estilos para el contenedor del chat */
+#chat-container {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 999;
+    width: 280px;
+    height: 350px;
+    background-color: #fff;
+    border: 1px solid #226f6b;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la ventana de mensajes */
+#messages-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #226f6b;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para los mensajes de los usuarios */
+.user {
+    text-align: right;
+    background-color: #fffefe;
+    border-radius: 12px;
+    padding: 8px 12px;
+    margin: 5px 0;
+    word-wrap: break-word;
+    max-width: 85%;
+    margin-left: auto;
+    border-radius: 10px;
+    border: 1px solid #226f6b;
+}
+
+/* Estilos para los mensajes del bot */
+.bot {
+    text-align: left;
+    background-color: #dbdada;
+    border-radius: 12px;
+    padding: 8px 12px;
+    margin: 5px 0;
+    word-wrap: break-word;
+    max-width: 85%;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 1px solid #226f6b;
+}
+
+/* Estilos para el área de input y el botón de envío */
+#input-area {
+    display: flex;
+    padding: 9px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #226f6b;
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #226f6b;
+}
+
+#send-btn {
+    padding: 8px 13px;
+    margin-left: 8px;
+    border: 1px solid #226f6b;
+    background-color: #226f6b;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#send-btn:hover {
+    background-color: #ffffff;
+    color: #226f6b;
+}
