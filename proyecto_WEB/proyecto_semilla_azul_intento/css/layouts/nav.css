@@ -1,14 +1,40 @@
 
 .menu-toggle {
-  display: none; 
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 24px;
+  display: none;
   background: none;
   border: none;
+  font-size: 2rem;
+  color: white;
   cursor: pointer;
 }
+/* --- Media Query para móviles --- */
+@media (max-width: 768px) {
+  /* Ocultar menú por defecto */
+  .sidebar-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .sidebar-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-toggle {
+    display: block; /* Mostrar el botón hamburguesa */
+  }
+
+  /* Cuando se active con JS */
+  .sidebar-nav.active {
+    display: block;
+  }
+}
+/*----------*/
 
 .menu-bar {
   width: 100%;
@@ -41,7 +67,7 @@
 }
 
 
-.sidebar-nav a:hover {
+.sidebar-nav ul li a:hover {
   color: var(--color-accent);
 }
 
@@ -56,5 +82,7 @@
 .sidebar-nav ul li {
   font-weight: 500;
   font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 

@@ -21,7 +21,7 @@
 }
 .site-title {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: bold;
   color: var(--color-title);
   letter-spacing: 2px;
   margin: 0;
