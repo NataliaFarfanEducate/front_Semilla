@@ -38,7 +38,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 70%;
   margin: 0 auto;
   gap: 2rem;
 }
@@ -85,7 +85,7 @@
 .carousel-container::before,
 .carousel-container::after {
   position: absolute;
-  width: 1000px;
+  width: 100%;
   height: 100%;
   z-index: 1;
 }
@@ -109,7 +109,7 @@
  
 .carousel-container img {
   flex: 0 0 auto;
-  width: 420px;
+  width: 200%;
   height: auto;
   object-fit: cover;
   flex-shrink: 0;
@@ -138,7 +138,7 @@
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    padding: 12px 18px;
+    padding: 0.75rem 1.125rem;
     font-size: 16px;
     border: 1px solid #226f6b;
     background-color: #fff;
@@ -159,10 +159,10 @@
     display: none;
     position: fixed;
     bottom: 80px;
-    right: 20px;
+    right: 2%;
     z-index: 999;
-    width: 280px;
-    height: 350px;
+    width: 21vw;
+    height: 45vh; 
     background-color: #fff;
     border: 1px solid #226f6b;
     border-radius: 12px;
@@ -176,7 +176,7 @@
 #messages-container {
     flex-grow: 1;
     overflow-y: auto;
-    padding: 15px;
+    padding: 0.94rem;
     border-radius: 10px;
     border: 1px solid #226f6b;
     border-bottom: 1px solid #eee;
@@ -188,10 +188,10 @@
     text-align: right;
     background-color: #fffefe;
     border-radius: 12px;
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem; 
     margin: 5px 0;
     word-wrap: break-word;
-    max-width: 85%;
+    max-width: 75%;
     margin-left: auto;
     border-radius: 10px;
     border: 1px solid #226f6b;
@@ -202,7 +202,7 @@
     text-align: left;
     background-color: #dbdada;
     border-radius: 12px;
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
     margin: 5px 0;
     word-wrap: break-word;
     max-width: 85%;
@@ -214,7 +214,7 @@
 /* Estilos para el área de input y el botón de envío */
 #input-area {
     display: flex;
-    padding: 9px;
+    padding: 8px;
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid #226f6b;
@@ -222,7 +222,7 @@
 
 #message-input {
     flex-grow: 1;
-    padding: 9px;
+    padding: 0.4rem; 
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
@@ -231,7 +231,7 @@
 }
 
 #send-btn {
-    padding: 8px 13px;
+    padding: 0.6vw 0.7vw;
     margin-left: 8px;
     border: 1px solid #226f6b;
     background-color: #226f6b;

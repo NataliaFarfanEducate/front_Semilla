@@ -21,21 +21,15 @@
       <a href="iniciar-sesion.html" class="btn" data-i18n="login">Iniciar Sesión</a>
       <a href="signup.html" class="btn" data-i18n="signup">Crear Cuenta</a>
       <button id="btn-lang" class="btn">🌐 Idioma</button>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
 
       <div class="botones-accesibilidad">
         <button id="aumentarFuente">+</button>
         <button id="disminuirFuente">-</button>
-        <button id="contraste">🌙</button>
+        <button id="contraste">☯</button>
       </div>
     </div>
   </header>
-
-  <button id="menu-toggle" class="menu-toggle" aria-controls="main-sidebar" aria-expanded="false"
-    aria-label="Abrir menú de navegación">
-    <span class="menu-bar"></span>
-    <span class="menu-bar"></span>
-    <span class="menu-bar"></span>
-  </button>
 
   <aside id="main-sidebar" class="main-sidebar closed-sidebar">
     <nav class="sidebar-nav">
@@ -57,7 +51,10 @@
   </aside>
   <main class="main-content">
     <section class="game-section">
-      <div class="game-content">
+      <div class="game-content"><br>
+        <div class="game-icon-container">
+          <span class="game-icon"></span>
+        </div>
         <h2 class="page-title" data-i18n="game.title">¡Juega y Aprende con SeedGame!</h2>
         <p class="game-description" data-i18n="game.description">
           SeedGame es una herramienta lúdica y educativa que te permite explorar la calidad del agua de una manera
@@ -93,5 +90,5 @@
 </body>
 <script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
 <script src="../js/translations/seedgame.js"></script>
-<script src="../js/accesibility/accesibility.js"></script>
+<script src="../js/main/app.js"></script>
 </html>

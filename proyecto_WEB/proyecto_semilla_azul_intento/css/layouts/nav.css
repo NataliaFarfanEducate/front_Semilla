@@ -8,15 +8,15 @@
   cursor: pointer;
 }
 /* --- Media Query para móviles --- */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   /* Ocultar menú por defecto */
   .sidebar-nav {
     display: none;
     position: absolute;
     top: 60px;
     right: 20px;
-    background-color: #000000;
-    border-radius: 8px;
+    background-color: #fff;
+    border-radius: 10px;
     padding: 10px;
   }
 
@@ -31,14 +31,18 @@
 
   /* Cuando se active con JS */
   .sidebar-nav.active {
+    /* con este display hacemos que el menú lateral se muestre */
     display: block;
+    width: 100%;
+    max-width: 200px; 
+    z-index: 1000;
   }
 }
 /*----------*/
 
 .menu-bar {
   width: 100%;
-  height: 3px;
+  height: auto;
   background-color: var(--color-primary);
   border-radius: 2px;
 }
@@ -80,7 +84,7 @@
 
 }
 .sidebar-nav ul li {
-  font-weight: 500;
+  font-weight: normal;
   font-size: 1rem;
   text-decoration: none;
   transition: color 0.3s;

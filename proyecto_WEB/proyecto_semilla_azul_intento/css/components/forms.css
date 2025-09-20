@@ -1,15 +1,22 @@
 
 
 .form-container {
-  max-width: 400px;     
-  height: 500px;   
+  max-width: 90%;
+  width: 400px;
+  max-height: 90vh;
+  height: auto ;   
   margin: 4rem auto;     
   padding: 2.5rem 2rem;   
   background: rgba(236, 231, 231, 0.7);
   border-radius: 16px;
   box-shadow: 0 10px 28px rgba(0,0,0,0.15);
 }
-
+@media (max-width: 600px) {
+  .rform-container {
+    max-width: 100%;
+    height: auto; /* que nunca se quede fijo */
+  }
+}
 
 .form-title {
   text-align: center;
@@ -50,7 +57,7 @@
 .form-group input {
   width: 100%;
   padding: 0.75rem 1rem;
-  border-radius: 999px;
+  border-radius: 10px;
   border: 1px solid rgba(0,0,0,0.12);
   background: #fff;
   font-size: 1rem;
