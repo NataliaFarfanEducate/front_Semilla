@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const ROOT = document.documentElement;
   const STORAGE_KEY = 'semilla_font_size';
   const CONTRASTE_KEY = 'semilla_contraste';
-  const MIN_ROOT_PX = 12;
-  const MAX_ROOT_PX = 30;
+  const MIN_ROOT_PX = 14;
+  const MAX_ROOT_PX = 26;
   const STEP_PX = 1;
 
   const baseRootPx = parseFloat(getComputedStyle(ROOT).fontSize) || 16;
