@@ -1,5 +1,5 @@
 // ---------------- OBSERVACIONES ----------------
-import { BASE_URL } from "../config.js";
+import { BASE_URL } from "../services.js/config.js";
 
 async function crearObservacion(observacion) {
   return fetch(`${BASE_URL}/observaciones/crear`, {

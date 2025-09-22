@@ -1,5 +1,5 @@
 // ===== UBICACIONES =====
-import { BASE_URL } from "../config.js";
+import { BASE_URL } from "../services.js/config.js";
 
 async function crearUbicacion(ubicacion) {
   const res = await fetch(`${BASE_URL}/ubicaciones/crear`, {

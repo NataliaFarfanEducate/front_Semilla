@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semilla Azul - Inicio</title>
-    <link rel="stylesheet" href="../css/main/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../css/main/main.css">
+
 </head>
 
 <body class="home-page">
@@ -84,6 +85,7 @@
                         </figure>
                         <figure id="slide-3" class="carousel-slide" role="tabpanel" aria-hidden="true">
                             <img src="../css/assets/Captura de pantalla 2025-08-13 214645.png"
+                           
                                 alt="Espectacular atardecer con reflejos en la superficie del agua." loading="lazy">
                         </figure>
                         <figure id="slide-4" class="carousel-slide" role="tabpanel" aria-hidden="true">
@@ -111,8 +113,9 @@
             </section>
         </main>
     </div>
-    <script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
-    <script src="../js/translations/index.js"></script>
-    <script src="../js/main/app.js"></script>
+     <script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js" defer></script>
+    <script type="module" src="../js/translations/index.js" defer></script>
+    <script type="module" src="../js/main/services.js/accesibility.js" defer></script>
+    <script type="module" src="../js/main/services.js/chat.js" defer></script>
 </body>
 </html>

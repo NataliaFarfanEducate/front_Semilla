@@ -1,5 +1,5 @@
 // ---------------- CALIDAD AGUA ----------------
-import { BASE_URL } from "../config.js";
+import { BASE_URL } from "../services.js/config.js";
 
 async function crearCalidadAgua(registro) {
   return fetch(`${BASE_URL}/calidad-agua/crear`, {

@@ -1,5 +1,5 @@
 // ---------------- FUENTES DE AGUA ----------------
-import { BASE_URL } from "../config.js";
+import { BASE_URL } from "../services.js/config.js";
 async function crearFuente(fuente) {
   return fetch(`${BASE_URL}/fuentes-agua/crear`, {
     method: "POST",

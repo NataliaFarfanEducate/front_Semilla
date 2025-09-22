@@ -62,21 +62,20 @@
     <section class="info-login">
       <div class="form-container">
         <h2 class="form-title">Iniciar Sesión</h2>
+<form class="login-form" id="loginForm">
+    <div class="form-group">
+        <label for="email">Correo electrónico <span class="required">*</span></label>
+        <input id="email" name="email" type="email" required>
+    </div>
 
-        <form class="login-form" action="#" method="post">
-          <div class="form-group">
-            <label for="username">Ingresa tu Usuario <span class="required">*</span></label>
-            <input id="username" name="username" type="text" required>
-          </div>
+    <div class="form-group">
+        <label for="contrasena">Contraseña <span class="required">*</span></label>
+        <input id="contrasena" name="contrasena" type="password" required>
+        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a><br>
+    </div>
 
-          <div class="form-group">
-            <label for="password">Ingresa tu Contraseña <span class="required">*</span></label>
-            <input id="password" name="password" type="password" required>
-            <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a><br>
-          </div>
-
-          <button class="form-button" type="submit">Iniciar Sesión</button><br>
-        </form>
+    <button class="form-button" type="submit">Iniciar Sesión</button><br>
+</form>
 
         <p class="form-link"><a href="signup.html" class="form-link">¿Aún no tienes una cuenta?</a></p>
       </div>
@@ -84,7 +83,9 @@
   </main>
 
 </body>
+<script src="../js/main/services.js/config.js"></script>
 <script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
 <script src="../js/translations/iniciar-sesion.js"></script>
+<script src="../js/main/services.js/login.js"></script>
 <script src="../js/main/app.js"></script>
 </html>

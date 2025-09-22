@@ -1,5 +1,5 @@
 // ---------------- INDICADORES ----------------
-import { BASE_URL } from "../config.js";
+import { BASE_URL } from "../services.js/config.js";
 
 async function crearIndicador(indicador) {
   return fetch(`${BASE_URL}/indicadores/crear`, {

@@ -1,7 +1,7 @@
 
-import { listarObservaciones } from "./services/observaciones.js";
-import { listarPreguntas } from "./services/preguntas.js";
-import { listarRespuestas } from "./services/respuestas.js";
+import { listarObservaciones } from "../services.js/observaciones.js";
+import { listarPreguntas } from "../services.js/preguntas.js";
+import { listarRespuestas } from "../services.js/respuestas.js";
 
 const generarInformeBtn = document.getElementById("generar-informe-btn");
 const reportContainer = document.getElementById("report-container");

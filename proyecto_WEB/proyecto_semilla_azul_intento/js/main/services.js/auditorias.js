@@ -1,5 +1,5 @@
 // ===== AUDITORÍAS =====
-import { BASE_URL } from "../config.js";
+import { BASE_URL } from "../services.js/config.js";
 async function crearAuditoria(auditoria) {
   const res = await fetch(`${BASE_URL}/auditorias/crear`, {
     method: "POST",

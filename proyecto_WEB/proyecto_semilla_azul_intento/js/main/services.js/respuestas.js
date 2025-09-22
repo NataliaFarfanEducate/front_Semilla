@@ -1,5 +1,5 @@
 // ===== RESPUESTAS =====
-import { BASE_URL } from "../config.js";
+import { BASE_URL } from "../services.js/config.js";
 
 async function crearRespuesta(respuesta) {
   const res = await fetch(`${BASE_URL}/respuestas/crear`, {

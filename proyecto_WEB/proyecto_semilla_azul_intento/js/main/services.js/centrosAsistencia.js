@@ -1,6 +1,6 @@
 // ---------------- CENTROS ASISTENCIA ----------------
 
-import { BASE_URL } from "../config.js";
+import { BASE_URL } from "../services.js/config.js";
 
 async function crearCentro(centro) {
   return fetch(`${BASE_URL}/centros-asistencia/crear`, {

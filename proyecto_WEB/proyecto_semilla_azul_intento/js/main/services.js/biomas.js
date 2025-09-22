@@ -1,5 +1,5 @@
 // ---------------- BIOMAS ----------------
-import { BASE_URL } from "../config.js";
+import { BASE_URL } from "../services.js/config.js";
 
 async function crearBioma(bioma) {
   return fetch(`${BASE_URL}/biomas/crear`, {
