@@ -1,0 +1,63 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-family: var(--font-primary);
+}
+
+.main-header nav a {
+  font-weight: 500; 
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.logo {
+  width: 12%;   /* antes fijo → ahora % para escalar */
+  max-width: 6rem; /* límite superior para pantallas grandes */
+  height: auto;
+}
+
+.site-title {
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: var(--color-title);
+  letter-spacing: 0.120rem;
+  margin: 0;
+}
+
+.site-title .highlight {
+  color: var(--color-accent);
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.user-actions .btn,
+.user-actions .btn-light {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem; /* rem en lugar de px */
+}
+
+/* idioma siempre visible */
+.language-select {
+  color: var(--color-white);
+}
+
+body.login-page .main-header .user-actions .btn,
+body.login-page .main-header .user-actions .btn-light {
+  display: none;
+}
+
+body.login-page .main-header .user-actions .language-select {
+  display: inline-block;
+}
+/* ------------------------------ */

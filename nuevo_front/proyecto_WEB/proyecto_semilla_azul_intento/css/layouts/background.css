@@ -1,0 +1,67 @@
+body.login-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;               
+  z-index: -1;                 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+
+body.informes-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(0.6); 
+}
+
+
+body.about-page {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body.about-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+
+body.game-page {
+  height: 100vh;
+  overflow: hidden; 
+  background-image: url("../assets/fondo_azul_marypiedra.jpeg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+body.game-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(6px);
+  z-index: -1;
+}
+<!--contraste-->
+.modo-contraste {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: black !important;
+    color: rgb(255, 255, 255) !important;
+}
+body.modo-contraste h1,
+body.modo-contraste h2,
+body.modo-contraste h3,
+body.modo-contraste a,
+body.modo-contraste p,
+body.modo-contraste label,
+body.modo-contraste span{
+  color: #fff !important;
+}

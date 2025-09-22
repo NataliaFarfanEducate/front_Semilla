@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar Sesión - Semilla Azul</title>
+
+  <link rel="stylesheet" href="../css/main/main.css">
+</head>
+<body class="login-page">
+
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="../css/assets/logo-semilla.jpeg" alt="Semilla Azul Logo" class="logo">
+      <h1 class="site-title">SEMILLA <span class="highlight">AZUL</span></h1>
+    </div>
+
+    <div class="user-actions">
+      <a href="iniciar-sesion.html" class="btn-light">Iniciar Sesión</a>
+      <a href="signup.html" class="btn-light">Crear Cuenta</a>
+
+      <span class="language-select">
+        <button id="btn-lang-toggle">🌐 Idioma</button>
+      </span>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+
+      <div class="botones-accesibilidad">
+          <button id="aumentarFuente">+</button>
+          <button id="disminuirFuente">-</button>
+          <button id="contraste">☯</button>
+      </div>
+    </div>
+  </header>
+  
+    <button id="menu-toggle" class="menu-toggle" aria-controls="main-sidebar" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+    </button>
+
+    <aside id="main-sidebar" class="main-sidebar closed-sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+              <li><a href="index.html" class="active-link" aria-current="page" data-i18n="menu.home">Inicio</a></li>
+              <li><a href="zona-piloto.html" class="active-link" data-i18n="menu.pilot">Zona Piloto</a></li>
+              <li><a href="que-sucede.html" class="active-link" data-i18n="menu.news">¿Qué sucede hoy?</a></li>
+              <li><a href="participa.html" class="active-link" data-i18n="menu.participate">Participa</a></li>
+              <li><a href="boletines.html" class="active-link" data-i18n="menu.reports">Boletines e Informes</a></li>
+              <li><a href="quienes-somos.html" class="active-link" data-i18n="menu.about">¿Quiénes Somos?</a></li>
+              <li><a href="seedgame.html" class="active-link" data-i18n="menu.seedgame">SeedGame</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-info">
+            <figure class="sidebar-logo" role="img" aria-label="Logo de Semilla Azul">
+                <div class="logo-inner"></div>
+            </figure>
+        </div>
+    </aside>
+
+
+  <main class="main-content">
+    <section class="info-login">
+      <div class="form-container">
+        <h2 class="form-title">Iniciar Sesión</h2>
+<form class="login-form" id="loginForm">
+    <div class="form-group">
+        <label for="email">Correo electrónico <span class="required">*</span></label>
+        <input id="email" name="email" type="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="contrasena">Contraseña <span class="required">*</span></label>
+        <input id="contrasena" name="contrasena" type="password" required>
+        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a><br>
+    </div>
+
+    <button class="form-button" type="submit">Iniciar Sesión</button><br>
+</form>
+
+        <p class="form-link"><a href="signup.html" class="form-link">¿Aún no tienes una cuenta?</a></p>
+      </div>
+    </section>
+  </main>
+
+</body>
+<script src="../js/main/services.js/config.js"></script>
+<script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
+<script src="../js/translations/iniciar-sesion.js"></script>
+<script src="../js/main/services.js/login.js"></script>
+<script src="../js/main/app.js"></script>
+</html>

@@ -1,0 +1,253 @@
+.main {
+  position: relative;
+  background-color: var(--color-white);
+  color: var(--color-white);
+  padding: var(--spacing-lg) var(--spacing-md);
+  min-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  gap: var(--spacing-lg);
+  padding-top: 4rem; 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 95%;
+  height: auto;
+}
+/* contraste */
+.modo-contraste,
+.modo-contraste h1,
+.modo-contraste h2,
+.modo-contraste h3,
+.modo-contraste a,
+.modo-contraste p,
+.modo-contraste label,
+.modo-contraste span{
+    filter: invert(1) hue-rotate(180deg);
+    background-color: black !important;
+    color: #fff !important;
+}
+/* ------------------------------ */
+.info-section {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.info-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.info-text {
+  flex: 1 1 55%;
+  text-align: justify;
+}
+
+.info-text h2 {
+  font-family: var(--font-heading, 'Inria Serif', serif);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.info-text p {
+  font-family: var(--font-body, 'Arial', sans-serif);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.info-image {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/*Slider*/
+.carousel-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  gap: 0px;
+  overflow: hidden; 
+  position: relative;
+}
+ 
+.carousel-container::before,
+.carousel-container::after {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  z-index: 1;
+}
+ 
+.carousel-container::before {
+  left: -5;
+  background: linear-gradient(to right, transparent);
+}
+ 
+.carousel-container::after {
+  right: -5;
+  background: linear-gradient(to left,transparent);
+}
+ 
+.carousel-track{
+  display: flex;
+  gap: 20px;
+  display: flex;
+  animation: scroll 40s linear infinite;
+}
+ 
+.carousel-container img {
+  flex: 0 0 auto;
+  width: 200%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+ 
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-60%);
+  }
+}
+ 
+ 
+.carousel-container img:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------------------ */
+/*Chat*/
+
+/* Estilos para el botón */
+#chat-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 0.75rem 1.125rem;
+    font-size: 16px;
+    border: 1px solid #226f6b;
+    background-color: #fff;
+    color: #226f6b;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#chat-toggle-btn:hover {
+    background-color: #226f6b;
+    color: #fff;
+}
+
+/* Estilos para el contenedor del chat */
+#chat-container {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 2%;
+    z-index: 999;
+    width: 21vw;
+    height: 45vh; 
+    background-color: #fff;
+    border: 1px solid #226f6b;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la ventana de mensajes */
+#messages-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0.94rem;
+    border-radius: 10px;
+    border: 1px solid #226f6b;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para los mensajes de los usuarios */
+.user {
+    text-align: right;
+    background-color: #fffefe;
+    border-radius: 12px;
+    padding: 0.5rem 0.75rem; 
+    margin: 5px 0;
+    word-wrap: break-word;
+    max-width: 75%;
+    margin-left: auto;
+    border-radius: 10px;
+    border: 1px solid #226f6b;
+}
+
+/* Estilos para los mensajes del bot */
+.bot {
+    text-align: left;
+    background-color: #dbdada;
+    border-radius: 12px;
+    padding: 0.5rem 0.75rem;
+    margin: 5px 0;
+    word-wrap: break-word;
+    max-width: 85%;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 1px solid #226f6b;
+}
+
+/* Estilos para el área de input y el botón de envío */
+#input-area {
+    display: flex;
+    padding: 0.3rem 0.4rem;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #226f6b;
+}
+
+#message-input {
+  padding: 0.3rem 0.4rem;
+    flex-grow: 1;
+    padding: 0.4rem; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #226f6b;
+}
+
+#send-btn {
+    padding: 0.3rem 0.4rem;
+    margin-left: 8px;
+    border: 1px solid #226f6b;
+    background-color: #226f6b;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+#send-btn:hover {
+  padding: 0.3rem 0.4rem;
+    background-color: #ffffff;
+    color: #226f6b;
+}

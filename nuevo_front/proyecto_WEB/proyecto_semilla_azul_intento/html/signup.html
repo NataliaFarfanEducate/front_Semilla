@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Cuenta - Semilla Azul</title>
+  <link rel="stylesheet" href="../css/main/main.css">
+</head>
+
+<body class="login-page">
+
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="../css/assets/logo-semilla.jpeg" alt="Semilla Azul Logo" class="logo">
+      <h1 class="site-title">SEMILLA <span class="highlight">AZUL</span></h1>
+    </div>
+    <div class="user-actions">
+      <button id="toggle-lang" class="language-select">🌐 Idioma</button>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </div>
+    <div class="botones-accesibilidad">
+        <button id="aumentarFuente">+</button>
+        <button id="disminuirFuente">-</button>
+        <button id="contraste">☯</button>
+    </div>
+  </header>
+
+  <button id="menu-toggle" class="menu-toggle" aria-controls="main-sidebar" aria-expanded="false"
+    aria-label="Abrir menú de navegación">
+    <span class="menu-bar"></span>
+    <span class="menu-bar"></span>
+    <span class="menu-bar"></span>
+  </button>
+
+  <aside id="main-sidebar" class="main-sidebar closed-sidebar">
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="index.html" class="active-link" aria-current="page" data-i18n="menu_home">Inicio</a></li>
+        <li><a href="zona-piloto.html" class="active-link" data-i18n="menu_pilot">Zona Piloto</a></li>
+        <li><a href="que-sucede.html" class="active-link" data-i18n="menu_today">¿Qué sucede hoy?</a></li>
+        <li><a href="participa.html" class="active-link" data-i18n="menu_participate">Participa</a></li>
+        <li><a href="boletines.html" class="active-link" data-i18n="menu_reports">Boletines e Informes</a></li>
+        <li><a href="quienes-somos.html" class="active-link" data-i18n="menu_about">¿Quiénes Somos?</a></li>
+        <li><a href="seedgame.html" class="active-link" data-i18n="menu_game">SeedGame</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-info">
+      <figure class="sidebar-logo" role="img" aria-label="Logo de Semilla Azul">
+        <div class="logo-inner"></div>
+      </figure>
+    </div>
+  </aside>
+    <main class="main-content signup-page">
+    <div class="form-container">
+      <h2 class="form-title" data-i18n="form_title">Crear Cuenta</h2>
+
+      <form class="signup-form" id="signupForm">
+      <div class="form-group">
+                    <label for="username" data-i18n="label_user">Ingresa tu Nombre de Usuario <span class="required">*</span></label>
+                    <input class="form-input" type="text" id="username" name="username" placeholder="(Nombre de usuario único)" required>
+                </div>
+                <div class="form-group">
+                    <!-- Campo de Nombre Completo -->
+                    <label for="full-name" data-i18n="label_fullname">Ingresa tu Nombre Completo <span class="required">*</span></label>
+                    <input class="form-input" type="text" id="full-name" name="full-name" placeholder="(Nombre completo)" required>
+                </div>
+
+        <div class="form-group">
+          <label for="email" data-i18n="label_email">Ingresa tu Correo <span class="required">*</span></label>
+          <input class="form-input" type="email" id="email" name="email"
+            placeholder="(ejemplo@gmail.com)" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password" data-i18n="label_password">Crea tu Contraseña <span class="required">*</span></label>
+          <input class="form-input" type="password" id="password" name="password"
+            placeholder="(Ingresa por lo menos 8 caracteres)" required>
+        </div>
+
+        <div class="form-group">
+
+            <div class="form-group">
+          <label for="role" data-i18n="label_role">Ingresa tu Rol <span class="required">*</span></label>
+            <input class="form-input" type="text"  id="role" name="role"  name="location" placeholder="1,2,3,4" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="location" data-i18n="label_location">Ingresa tu Ubicación <span class="required">*</span></label>
+          <div class="location-input">
+            <input class="form-input" type="text" id="location" name="location" placeholder="" required>
+            <span class="location-icon" aria-hidden="true"></span>
+          </div>
+        </div><br>
+
+        <button type="submit" class="form-button" data-i18n="btn_submit">Crear Cuenta</button><br>
+        <p class="form-link"><a href="./iniciar-sesion.html" data-i18n="link_login">¿Ya tienes una cuenta?</a></p>
+      </form>
+    </div>
+  </main>
+</body>
+<script type="module" src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js" defer></script>
+<script type="module" src="../js/translations/signup.js" defer></script>
+<script type="module" src="../js/main/app.js" defer></script>
+<script type="module" src="../js/main/services.js/signup.js" defer></script>
+</html>

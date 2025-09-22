@@ -1,0 +1,70 @@
+
+
+.btn {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+}
+
+.btn-light {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.btn-light:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.language-select{
+    cursor: pointer;
+    font-weight: 3rem;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.botones-accesibilidad {
+  position: fixed;
+  top: 50%;
+  right: 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  transform: translateY(-50%);
+}
+
+.botones-accesibilidad button {
+  background-color: #4b4949;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+  position: static;
+  z-index: 1;
+}
+
+.botones-accesibilidad button:hover {
+  background-color: #226f6b;
+}

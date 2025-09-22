@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head class="no-js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semilla Azul - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/main/main.css">
+
+</head>
+
+<body class="home-page">
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="../css/assets/logo-semilla.jpeg" alt="Semilla Azul Logo" class="logo">
+            <h1 class="site-title">
+                SEMILLA <span class="highlight">AZUL</span>
+            </h1>
+        </div>
+
+        <div class="user-actions">
+            <a href="iniciar-sesion.html" class="btn" data-i18n="login">Iniciar Sesión</a>
+            <a href="signup.html" class="btn" data-i18n="signup">Crear Cuenta</a>
+            <button id="lang-toggle" class="btn">🌐 Idioma</button>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+
+            <div class="botones-accesibilidad">
+                <button id="aumentarFuente">+</button>
+                <button id="disminuirFuente">-</button>
+                <button id="contraste">☯</button>
+            </div>
+
+            <button id="chat-toggle-btn">Chat</button>
+
+            <div id="chat-container">
+                <div id="messages-container"></div>
+                
+                <div id="input-area">
+                    <input type="text" id="message-input" placeholder="Escribe un mensaje...">
+                    <button id="send-btn">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside id="main-sidebar" class="main-sidebar">
+        <nav id="sidebar-nav" class="sidebar-nav">
+            <ul>
+                <li><a href="#principle" class="active-link" aria-current="page" data-i18n="menu.home">Inicio</a></li>
+                <li><a href="#pilot-zone" class="active-link" data-i18n="menu.pilot">Zona Piloto</a></li>
+                <li><a href="#whats-up" class="active-link" data-i18n="menu.news">¿Qué sucede hoy?</a></li>
+                <li><a href="#participate" class="active-link" data-i18n="menu.participate">Participa</a></li>
+                <li><a href="#reports" class="active-link" data-i18n="menu.reports">Boletines e Informes</a></li>
+                <li><a href="#about-us" class="active-link" data-i18n="menu.about">¿Quiénes Somos?</a></li>
+                <li><a href="#game" class="active-link" data-i18n="menu.seedgame">SeedGame</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-info">
+            <figure class="sidebar-logo" role="img" aria-label="Logo de Semilla Azul">
+                <div class="logo-inner"></div>
+            </figure>
+        </div>
+    </aside>
+
+    <div id="principle" class="page-background">
+        <main class="main">
+            <section class="image-carousel-section" aria-label="Carrusel de imágenes de la comunidad">
+                <div class="carousel-container">
+                    <button id="prev-btn" class="carousel-button" aria-label="Diapositiva anterior"></button>
+
+                    <div class="carousel-track" role="group" aria-live="polite">
+                        <figure id="slide-1" class="carousel-slide" role="tabpanel">
+                            <img src="../css/assets/Captura de pantalla 2025-08-13 214310.png"
+                                alt="Laguna tropical con vegetación exuberante." loading="lazy">
+                        </figure>
+                        <figure id="slide-2" class="carousel-slide" role="tabpanel" aria-hidden="true">
+                            <img src="../css/assets/Captura de pantalla 2025-08-13 214513.png"
+                                alt="Bote de madera navegando en un lago tranquilo." loading="lazy">
+                        </figure>
+                        <figure id="slide-3" class="carousel-slide" role="tabpanel" aria-hidden="true">
+                            <img src="../css/assets/Captura de pantalla 2025-08-13 214645.png"
+                           
+                                alt="Espectacular atardecer con reflejos en la superficie del agua." loading="lazy">
+                        </figure>
+                        <figure id="slide-4" class="carousel-slide" role="tabpanel" aria-hidden="true">
+                            <img src="../css/assets/Parroquia.png"
+                                alt="Parroquia central de coyaima." loading="lazy">
+                        </figure>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <div class="info-content">
+                    <div class="info-text">
+                        <h2 data-i18n="info.title">¿De qué trata esto?</h2>
+                        <p data-i18n="info.text"> 
+                            Un sistema que permite monitorear en tiempo real la calidad del agua, usando sensores y una aplicación fácil de usar. Pensado para empoderar a las comunidades con información clara, alertas tempranas y herramientas para tomar decisiones que protejan su recurso más valioso: el agua.
+                        </p>
+                    </div>
+                    <div class="info-image">
+                        <img src="../css/assets/Gemini_Generated_Image_i3tt2ii3tt2ii3tt.png"
+                            alt="Dispositivo de monitoreo de agua de alta tecnología flotando en un cuerpo de agua.">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <section id="pilot-zone" class="pilot-zone-page">
+    <section class="main-content">
+        <section class="pilot-zone-container">
+            <div class="gallery-container">
+                <img src="../css/assets/Captura de pantalla 2025-08-13 214310.png"
+                    alt="Laguna tropical con un sensor de monitoreo de Semilla Azul" class="gallery-img">
+                <img src="../css/assets/Captura de pantalla 2025-08-13 214513.png"
+                    alt="Atardecer sobre el agua en la zona piloto" class="gallery-img">
+                <img src="../css/assets/Captura de pantalla 2025-08-13 214645.png"
+                    alt="Bote en un lago con un investigador de Semilla Azul" class="gallery-img">
+            </div>
+            <div class="info-container">
+                <h2 class="info-title" data-i18n="location">Coyaima - Tolima</h2>
+                <p class="info-description" data-i18n="description">
+                    El 65% de los habitantes son jóvenes menores de 30 años y más del 50% de los hogares no cuentan con
+                    acceso regular al agua potable. El agua que consumen proviene de fuentes naturales como quebradas,
+                    que en temporadas secas disminuyen considerablemente.
+                </p>
+                <img src="../css/assets/coyaima.png" alt="Mapa de Coyaima en Tolima" class="map-image">
+            </div>
+        </section>
+    </section>
+    </section>
+
+    <section id="whats-up" class="main-content"> <!-- que sucede  -->
+        <div class="info-header">
+            <h1 class="page-title" data-i18n="happeningTitle">¿Qué sucede hoy?</h1>
+        </div>
+
+        <div class="search-bar-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="¿Qué te interesa saber hoy?">
+            <button id="searchBtn" class="search-icon">🔍</button>
+        </div>
+        
+        <div class="info-grid">
+            <article class="info-card">
+                <a href="alertas.html" class="card-link" aria-label="Ver alertas recientes sobre la calidad del agua.">
+                    <h2 class="info-card-title" data-i18n="alertsTitle">Alertas Recientes</h2>
+                    <p class="info-card-text" data-i18n="alertsText">Mantente informado sobre cambios en la calidad del agua.</p>
+                </a>
+            </article>
+
+            <article class="info-card">
+                <a href="reportes.html" class="card-link" aria-label="Consultar los datos más recientes de los sensores.">
+                    <h2 class="info-card-title" data-i18n="reportsTitle">Reportes Diarios</h2>
+                    <p class="info-card-text" data-i18n="reportsText">Consulta los datos más recientes de los sensores.</p>
+                </a>
+            </article>
+
+            <article class="info-card">
+                <a href="noticias.html" class="card-link" aria-label="Leer las últimas noticias sobre la conservación del agua.">
+                    <h2 class="info-card-title" data-i18n="newsTitle">Noticias</h2>
+                    <p class="info-card-text" data-i18n="newsText">Últimas noticias sobre conservación del agua.</p>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section id="participate" class="main-content">
+        <section class="participa-section">
+            <h2 class="page-title" data-i18n="section.title">¿Cómo puedes ser parte de esto?</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <h3 class="step-title" data-i18n="step1.title">1. Cuéntanos tu historia</h3>
+                    <p class="step-text" data-i18n="step1.text">
+                        Esto puede ser de forma anónima si el usuario lo desea, estos testimonios nos ayudan a conocer más la comunidad y a mejorar para ustedes.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <h3 class="step-title" data-i18n="step2.title">2. Completa nuestras encuestas</h3>
+                    <p class="step-text" data-i18n="step2.text">
+                        Por medio de estas nosotros podemos mejorar día a día por medio de sus opiniones no solo de esta página sino del sistema completo de monitoreo.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <h3 class="step-title" data-i18n="step3.title">3. Edúcate aquí mismo</h3>
+                    <p class="step-text" data-i18n="step3.text">
+                        Conoce por medio de nuestra página diferentes formas en las que, desde tu casa puedes filtrar este recurso tan importante.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="reports" class="main-content">
+        <section class="reports-section">
+            <h2 class="page-title-uno" data-i18n="reports.title">Boletines e Informes</h2><br>
+            <div class="reports-grid">
+                <div class="report-card">
+                    <h3 class="report-title" data-i18n="reports.monthly">Informe Mensual - Enero 2025</h3>
+                    <p class="report-description" data-i18n="reports.monthlyDesc">Resumen de la calidad del agua durante
+                        el mes de enero, incluyendo análisis de tendencias y recomendaciones.</p>
+                    <a href="#" class="report-link" data-i18n="reports.download">Descargar PDF</a>
+                </div>
+                <div class="report-card">
+                    <h3 class="report-title" data-i18n="reports.weekly">Boletín Semanal</h3>
+                    <p class="report-description" data-i18n="reports.weeklyDesc">Actualizaciones semanales sobre el
+                        estado de los sensores y alertas importantes para la comunidad.</p>
+                    <a href="#" class="report-link" data-i18n="reports.viewOnline">Ver Online</a>
+                </div>
+                <div class="report-card">
+                    <h3 class="report-title" data-i18n="reports.technical">Análisis Técnico</h3>
+                    <p class="report-description" data-i18n="reports.technicalDesc">Informes técnicos detallados sobre
+                        parámetros de calidad del agua y metodologías de medición.</p>
+                    <a href="#" class="report-link" data-i18n="reports.access">Acceder</a>
+                </div>
+                <div class="report-card">
+                    <h3 class="report-title" data-i18n="reports.guides">Guías Educativas</h3>
+                    <p class="report-description" data-i18n="reports.guidesDesc">Material educativo sobre conservación
+                        del agua y mejores prácticas para el cuidado del recurso hídrico.</p>
+                    <a href="#" class="report-link" data-i18n="reports.explore">Explorar</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="about-us" class="main-content">
+      <section class="about-us-section">
+        <div class="about-content-wrapper">
+          <div class="about-text">
+            <h2 class="about-title" data-i18n="about.title">¿Quiénes Somos?</h2>
+            <p class="about-intro" data-i18n="about.intro">
+              Somos un equipo multidisciplinario comprometido con la protección
+              y conservación del recurso hídrico. Nuestra misión es empoderar a
+              las comunidades con tecnología accesible para el monitoreo de la
+              calidad del agua.
+            </p>
+            <div class="vision-values">
+              <div class="value-box">
+                <h3 data-i18n="about.goalTitle">¿Qué buscamos?</h3>
+                <p data-i18n="about.goalText">
+                  Un mundo donde todas las comunidades tengan acceso a agua
+                  limpia y segura, respaldado por sistemas de monitoreo
+                  transparentes y participativos.
+                </p>
+              </div>
+              <div class="value-box">
+                <h3 data-i18n="about.wantTitle">¿Qué queremos?</h3>
+                <p data-i18n="about.wantText">
+                  Democratizar el acceso a información sobre la calidad del agua
+                  mediante tecnología de sensores y aplicaciones intuitivas que
+                  permitan a las comunidades tomar decisiones informadas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img
+              src="../css/assets/Gemini_Generated_Image_i3tt2ii3tt2ii3tt.png"
+              alt="Gota de agua con chip"
+            />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="game" class="main-content">
+    <section class="game-section">
+      <div class="game-content"><br>
+        <div class="game-icon-container">
+          <span class="game-icon"></span>
+        </div>
+        <h2 class="page-title" data-i18n="game.title">¡Juega y Aprende con SeedGame!</h2>
+        <p class="game-description" data-i18n="game.description">
+          SeedGame es una herramienta lúdica y educativa que te permite explorar la calidad del agua de una manera
+          interactiva y divertida. ¡Ayuda a la comunidad virtual a mantener su agua limpia!
+        </p>
+
+        <div class="game-features-grid">
+          <div class="feature-card">
+            <h3 class="feature-title" data-i18n="features.minigames.title">Mini-juegos</h3>
+            <p class="feature-text" data-i18n="features.minigames.text">
+              Desafíos de lógica y agilidad para resolver problemas de contaminación.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3 class="feature-title" data-i18n="features.simulation.title">Simulación</h3>
+            <p class="feature-text" data-i18n="features.simulation.text">
+              Visualiza el impacto de tus decisiones en el ecosistema acuático.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3 class="feature-title" data-i18n="features.ranking.title">Ranking</h3>
+            <p class="feature-text" data-i18n="features.ranking.text">
+              Compite con otros jugadores y sube en la tabla de clasificación.
+            </p>
+          </div>
+        </div>
+
+        <a href="#" class="cta-button" data-i18n="cta.play">Empezar a Jugar</a>
+      </div>
+    </section>
+  </section>
+
+    <script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js" defer></script>
+    <script type="module" src="../js/translations/index.js" defer></script>
+    <script type="module" src="../js/main/services.js/accesibility.js" defer></script>
+    <script type="module" src="../js/main/services.js/chat.js" defer></script>
+    <script type="module" src="../js/main/menu.js" defer></script> 
+</body>
+</html>

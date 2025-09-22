@@ -1,0 +1,92 @@
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+/* --- Media Query para móviles --- */
+@media (max-width: 750px) {
+  /* Ocultar menú por defecto */
+  .sidebar-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .sidebar-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-toggle {
+    display: block; /* Mostrar el botón hamburguesa */
+  }
+
+  /* Cuando se active con JS */
+  .sidebar-nav.active {
+    /* con este display hacemos que el menú lateral se muestre */
+    display: block;
+    width: 100%;
+    max-width: 200px; 
+    z-index: 1000;
+  }
+}
+/*----------*/
+
+.menu-bar {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+.main-sidebar {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) 0;
+  margin: 0;
+}
+
+.sidebar-nav a {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 500; 
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+.sidebar-nav ul li a:hover {
+  color: var(--color-accent);
+}
+
+.sidebar-nav .active-link {
+  font-weight: 500;
+}
+
+.sidebar-nav .active-link:hover {
+  border-bottom: 2px solid var(--color-primary);
+
+}
+.sidebar-nav ul li {
+  font-weight: normal;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+

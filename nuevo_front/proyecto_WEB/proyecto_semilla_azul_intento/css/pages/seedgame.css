@@ -1,0 +1,167 @@
+.game-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh; 
+  padding: var(--spacing-lg);
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* contraste */
+.modo-contraste,
+.modo-contraste h1,
+.modo-contraste h2,
+.modo-contraste h3,
+.modo-contraste a,
+.modo-contraste p,
+.modo-contraste label,
+.modo-contraste span {
+  filter: invert(1) hue-rotate(180deg);
+  background-color: black !important;
+  color: #fff !important;
+}
+
+/* ------------------------------ */
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  max-width: 960px;
+  width: 100%;
+  z-index: 1;
+}
+
+.game-icon-container {
+  width: 80px;
+  height: 80px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.game-icon {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, var(--color-primary), #1a1a1a);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 15px var(--color-primary);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  70% { transform: scale(1.2); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.page-title,
+.game-description,
+.feature-title,
+.feature-text {
+  color: black !important;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.game-description {
+  max-width: 43.75rem; /* 700px → 43.75rem */
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.game-features-grid {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 16.25rem; /* 260px → 16.25rem */
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.feature-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cta-button {
+  margin-top: var(--spacing-sm);
+  padding: 0.75rem 2rem;
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--color-primary);
+}
+
+/* ------------------------------ */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .game-icon-container {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .feature-card {
+    width: 14rem; /* más compacto en tablets */
+  }
+
+  .page-title {
+    font-size: 1.75rem;
+  }
+
+  .game-description {
+    font-size: 1rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .game-content {
+    max-width: 100%;
+    padding: var(--spacing-sm);
+  }
+
+  .game-icon-container {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .feature-card {
+    width: 100%; /* ocupar todo el ancho */
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .game-description {
+    font-size: 0.95rem;
+  }
+}

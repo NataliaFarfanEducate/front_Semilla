@@ -1,0 +1,111 @@
+.main-content .reports-section {
+  min-height: 70vh;
+  padding: var(--spacing-lg);
+  text-align: center;
+  position: relative;
+  color: var(--color-white);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* contraste */
+.modo-contraste,
+.modo-contraste h1,
+.modo-contraste h2,
+.modo-contraste h3,
+.modo-contraste a,
+.modo-contraste p,
+.modo-contraste label,
+.modo-contraste span {
+  filter: invert(1) hue-rotate(180deg);
+  background-color: black !important;
+  color: #fff !important;
+}
+/* ------------------------------ */
+
+.page-title-uno {
+  font-size: 2rem; /* relativo al root */
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-white);
+}
+
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* 15rem ≈ 240px */
+  gap: var(--spacing-lg);
+  width: 100%;
+  max-width: 75rem; /* 1200px → 75rem */
+}
+
+.report-card {
+  background-color: var(--color-white);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.3); /* 4px → 0.25rem / 8px → 0.5rem */
+  transition: transform 0.3s ease; 
+  color: black; 
+  border: 0.0625rem solid #e0e0e0; /* 1px → 0.0625rem */
+}
+
+.report-card:hover {
+  transform: translateY(-0.625rem); /* 10px → 0.625rem */
+}
+
+.report-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  color: black; 
+}
+
+.report-description {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-md);
+  color: black;
+}
+
+.report-link {
+  color: var(--color-forgot-link);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+
+.report-link:hover {
+  color: var(--color-accent);
+}
+
+/* ------------------------------*/
+@media (max-width: 48rem) { /* 768px */
+  .page-title-uno {
+    font-size: 1.75rem;
+  }
+
+  .reports-grid {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* 192px */
+    max-width: 100%;
+  }
+
+  .report-card {
+    padding: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 30rem) { /* 480px */
+  .page-title-uno {
+    font-size: 1.5rem;
+  }
+
+  .reports-grid {
+    grid-template-columns: 1fr; /* una sola columna */
+    gap: var(--spacing-md);
+  }
+
+  .report-card {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
