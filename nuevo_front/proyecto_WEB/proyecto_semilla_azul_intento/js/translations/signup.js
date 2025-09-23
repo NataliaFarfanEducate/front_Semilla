@@ -16,6 +16,7 @@ i18next.init({
         menu_game: "SeedGame",
         form_title: "Crear Cuenta",
         label_user: "Ingresa tu Usuario *",
+        label_fullname: "Ingresa tu Nombre Completo *",
         label_email: "Ingresa tu Correo *",
         label_password: "Crea tu Contraseña *",
         label_role: "Ingresa tu Rol *",
@@ -24,6 +25,7 @@ i18next.init({
         role_researcher: "Investigador",
         role_admin: "Administrador",
         label_location: "Ingresa tu Ubicación *",
+        telefono: "Ingresa tu Número de Teléfono *",
         btn_submit: "Crear Cuenta",
         link_login: "¿Ya tienes una cuenta?"
       }
@@ -41,6 +43,7 @@ i18next.init({
         menu_game: "SeedGame",
         form_title: "Create Account",
         label_user: "Enter your Username *",
+        label_fullname: "Enter your Full Name *",
         label_email: "Enter your Email *",
         label_password: "Create your Password *",
         label_role: "Enter your Role *",
@@ -49,6 +52,7 @@ i18next.init({
         role_researcher: "Researcher",
         role_admin: "Administrator",
         label_location: "Enter your Location *",
+        telefono: "Enter your Phone Number *",
         btn_submit: "Create Account",
         link_login: "Already have an account?"
       }

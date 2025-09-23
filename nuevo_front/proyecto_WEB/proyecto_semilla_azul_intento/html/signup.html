@@ -56,20 +56,9 @@
       <h2 class="form-title" data-i18n="form_title">Crear Cuenta</h2>
 
       <form class="signup-form" id="signupForm">
-      <div class="form-group">
-                    <label for="username" data-i18n="label_user">Ingresa tu Nombre de Usuario <span class="required">*</span></label>
-                    <input class="form-input" type="text" id="username" name="username" placeholder="(Nombre de usuario único)" required>
-                </div>
-                <div class="form-group">
-                    <!-- Campo de Nombre Completo -->
-                    <label for="full-name" data-i18n="label_fullname">Ingresa tu Nombre Completo <span class="required">*</span></label>
-                    <input class="form-input" type="text" id="full-name" name="full-name" placeholder="(Nombre completo)" required>
-                </div>
-
         <div class="form-group">
-          <label for="email" data-i18n="label_email">Ingresa tu Correo <span class="required">*</span></label>
-          <input class="form-input" type="email" id="email" name="email"
-            placeholder="(ejemplo@gmail.com)" required>
+          <label for="username" data-i18n="label_user">Ingresa tu Nombre de Usuario <span class="required">*</span></label>
+          <input class="form-input" type="text" id="username" name="username" placeholder="(Nombre de usuario único)" required>
         </div>
 
         <div class="form-group">
@@ -79,19 +68,32 @@
         </div>
 
         <div class="form-group">
-
-            <div class="form-group">
-          <label for="role" data-i18n="label_role">Ingresa tu Rol <span class="required">*</span></label>
-            <input class="form-input" type="text"  id="role" name="role"  name="location" placeholder="1,2,3,4" required>
-          </div>
+          <label for="email" data-i18n="label_email">Ingresa tu Correo <span class="required">*</span></label>
+          <input class="form-input" type="email" id="email" name="email"
+            placeholder="(ejemplo@gmail.com)" required>
         </div>
 
         <div class="form-group">
-          <label for="location" data-i18n="label_location">Ingresa tu Ubicación <span class="required">*</span></label>
+          <label for="full-name" data-i18n="label_fullname">Ingresa tu Nombre Completo<span class="required">*</span></label>
+          <input class="form-input" type="text" id="full-name" name="full-name" placeholder="(Nombre completo)" required>
+        </div>
+
+        <div class="form-group">
+          <label for="role" data-i18n="label_role">Ingresa tu Rol <span class="required">*</span></label>
+          <input class="form-input" type="text"  id="role" name="role"  name="location" placeholder="1,2,3,4" required>
+        </div>
+
+        <div class="form-group">
+          <label for="location" data-i18n="label_location">Ingresa el ID de tu Ubicación <span class="required">*</span></label>
           <div class="location-input">
             <input class="form-input" type="text" id="location" name="location" placeholder="" required>
             <span class="location-icon" aria-hidden="true"></span>
           </div>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono" data-i18n="telefono">Ingresa tu Número de Teléfono<span class="required">*</span></label>
+          <input class="form-input" type="text" id="telefono" name="telefono" placeholder="(Ingresa tu Número de Teléfono *)" required>
         </div><br>
 
         <button type="submit" class="form-button" data-i18n="btn_submit">Crear Cuenta</button><br>
@@ -104,4 +106,6 @@
 <script type="module" src="../js/translations/signup.js" defer></script>
 <script type="module" src="../js/main/app.js" defer></script>
 <script type="module" src="../js/main/services.js/signup.js" defer></script>
+<script type="module" src="../js/main/menu.js" defer></script> 
+<script src="../js/main/accesibility.js"></script>
 </html>

@@ -94,6 +94,18 @@ i18next.init({
         },
         cta: {
           play: "Empezar a Jugar"
+        },
+        centros: {
+            centrosTitle: "Centros de Asistencia Hídrica",
+            fields: {
+              location: "Ubicación",
+              type: "Tipo",
+              schedule: "Horario",
+              capacity: "Capacidad",
+              status: "Estado",
+              phone: "Teléfono",
+              created: "Fecha de Creación"
+            }
         }
       }
     },
@@ -186,7 +198,19 @@ i18next.init({
         },
         cta: {
           play: "Start Playing"
-        }
+        },
+        centros: {
+            centrosTitle: "Water Assistance Centers",
+            fields: {
+              location: "Location",
+              type: "Type",
+              schedule: "Schedule",
+              capacity: "Capacity",
+              status: "Status",
+              phone: "Phone",
+              created: "Creation Date"
+            }
+          }
       }
     }
   }

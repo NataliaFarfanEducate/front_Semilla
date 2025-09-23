@@ -198,6 +198,59 @@
         </section>
     </section>
 
+    <section class="main-content">
+        <div class="info-header">
+            <h1 class="page-title" data-i18n="centrosTitle">Centros de Asistencia Hídrica</h1>
+        </div>
+
+        <!-- GRID DE CENTROS -->
+        <div id="centrosContainer" class="info-grid">
+            <!-- PLANTILLA DE TARJETA (rellenada dinámicamente con JS) -->
+            <article class="info-card">
+                <a href="#" class="card-link">
+                    <h2 class="info-card-title" data-i18n="centros.centrosTitle">{{nombreCentro}}</h2>
+                    <p class="info-card-text">
+                    <strong data-i18n="centros.fields.location"></strong>: {{nombreUbicacion}} <br>
+                    <strong data-i18n="centros.fields.type"></strong>: {{tipoCentro}} <br>
+                    <strong data-i18n="centros.fields.schedule"></strong>: {{horarioApertura}} - {{horarioCierre}} <br>
+                    <strong data-i18n="centros.fields.capacity"></strong>: {{capacidadAtencion}} personas <br>
+                    <strong data-i18n="centros.fields.status"></strong>: {{estado}} <br>
+                    <strong data-i18n="centros.fields.phone"></strong>: {{telefonoContacto}} <br>
+                    <strong data-i18n="centros.fields.created"></strong>: {{fechaCreacion}}
+                    </p>
+                </a>
+            </article>
+            <article class="info-card">
+                <a href="#" class="card-link">
+                    <h2 class="info-card-title" data-i18n="centros.centrosTitle">{{nombreCentro}}</h2>
+                    <p class="info-card-text">
+                    <strong data-i18n="centros.fields.location"></strong>: {{nombreUbicacion}} <br>
+                    <strong data-i18n="centros.fields.type"></strong>: {{tipoCentro}} <br>
+                    <strong data-i18n="centros.fields.schedule"></strong>: {{horarioApertura}} - {{horarioCierre}} <br>
+                    <strong data-i18n="centros.fields.capacity"></strong>: {{capacidadAtencion}} personas <br>
+                    <strong data-i18n="centros.fields.status"></strong>: {{estado}} <br>
+                    <strong data-i18n="centros.fields.phone"></strong>: {{telefonoContacto}} <br>
+                    <strong data-i18n="centros.fields.created"></strong>: {{fechaCreacion}}
+                    </p>
+                </a>
+            </article>
+            <article class="info-card">
+                <a href="#" class="card-link">
+                    <h2 class="info-card-title" data-i18n="centros.centrosTitle">{{nombreCentro}}</h2>
+                    <p class="info-card-text">
+                    <strong data-i18n="centros.fields.location"></strong>: {{nombreUbicacion}} <br>
+                    <strong data-i18n="centros.fields.type"></strong>: {{tipoCentro}} <br>
+                    <strong data-i18n="centros.fields.schedule"></strong>: {{horarioApertura}} - {{horarioCierre}} <br>
+                    <strong data-i18n="centros.fields.capacity"></strong>: {{capacidadAtencion}} personas <br>
+                    <strong data-i18n="centros.fields.status"></strong>: {{estado}} <br>
+                    <strong data-i18n="centros.fields.phone"></strong>: {{telefonoContacto}} <br>
+                    <strong data-i18n="centros.fields.created"></strong>: {{fechaCreacion}}
+                    </p>
+                </a>
+            </article>
+        </div>
+    </section>
+
     <section id="reports" class="main-content">
         <section class="reports-section">
             <h2 class="page-title-uno" data-i18n="reports.title">Boletines e Informes</h2><br>
@@ -308,9 +361,13 @@
     </section>
   </section>
 
+  <footer class="footer">
+    <small>© Semilla Azul</small>
+  </footer>
+
     <script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js" defer></script>
     <script type="module" src="../js/translations/index.js" defer></script>
-    <script type="module" src="../js/main/services.js/accesibility.js" defer></script>
+    <script type="module" src="../js/main/accesibility.js" defer></script>
     <script type="module" src="../js/main/services.js/chat.js" defer></script>
     <script type="module" src="../js/main/menu.js" defer></script> 
 </body>
