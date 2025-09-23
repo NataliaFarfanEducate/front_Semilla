@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centros de Asistencia Hídrica - Semilla Azul</title>
+    <link rel="stylesheet" href="../css/main/main.css">
+</head>
+
+<body class="centros-page">
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="../css/assets/logo-semilla.jpeg" alt="Semilla Azul Logo" class="logo">
+            <h1 class="site-title">
+                SEMILLA <span class="highlight">AZUL</span>
+            </h1>
+        </div>
+
+        <div class="user-actions">
+            <a href="iniciar-sesion.html" class="btn" data-i18n="login">Iniciar Sesión</a>
+            <a href="signup.html" class="btn" data-i18n="signup">Crear Cuenta</a>
+            <button id="lang-toggle" class="btn">🌐 Idioma</button>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            
+            <div class="botones-accesibilidad">
+                <button id="aumentarFuente">+</button>
+                <button id="disminuirFuente">-</button>
+                <button id="contraste">☯</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside id="main-sidebar" class="main-sidebar closed-sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html" class="active-link" data-i18n="menu.home">Inicio</a></li>
+                <li><a href="centros.html" class="active-link" data-i18n="menu.centros">Centros de Asistencia</a></li>
+                <li><a href="que-sucede.html" class="active-link" data-i18n="menu.happening">¿Qué sucede hoy?</a></li>
+                <li><a href="participa.html" class="active-link" data-i18n="menu.participate">Participa</a></li>
+                <li><a href="boletines.html" class="active-link" data-i18n="menu.reports">Boletines e Informes</a></li>
+                <li><a href="quienes-somos.html" class="active-link" data-i18n="menu.about">¿Quiénes Somos?</a></li>
+                <li><a href="seedgame.html" class="active-link" data-i18n="menu.game">SeedGame</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-info">
+            <figure class="sidebar-logo" role="img" aria-label="Logo de Semilla Azul">
+                <div class="logo-inner"></div>
+            </figure>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="info-header">
+            <h1 class="page-title" data-i18n="centrosTitle">Centros de Asistencia Hídrica</h1>
+        </div>
+
+        <!-- GRID DE CENTROS -->
+        <div id="centrosContainer" class="info-grid">
+            <!-- PLANTILLA DE TARJETA (rellenada dinámicamente con JS) -->
+            <article class="info-card">
+                <a href="#" class="card-link">
+                    <h2 class="info-card-title">{{nombreCentro}}</h2>
+                    <p class="info-card-text">
+                        <strong>Ubicación:</strong> {{nombreUbicacion}} <br>
+                        <strong>Tipo:</strong> {{tipoCentro}} <br>
+                        <strong>Horario:</strong> {{horarioApertura}} - {{horarioCierre}} <br>
+                        <strong>Capacidad:</strong> {{capacidadAtencion}} personas <br>
+                        <strong>Estado:</strong> {{estado}} <br>
+                        <strong>Teléfono:</strong> {{telefonoContacto}} <br>
+                        <strong>Fecha de Creación:</strong> {{fechaCreacion}}
+                    </p>
+                </a>
+            </article>
+        </div>
+    </main>
+</body>
+
+<script src="https://unpkg.com/i18next@23.7.6/dist/umd/i18next.min.js"></script>
+<script src="../js/translations/centros.js"></script>
+<script src="../js/main/app.js"></script>
+<script src="../js/main/menu.js"></script>
+<script src="../js/main/services.js/centrosAsistencia.js"></script>
+<script type="module" src="../js/main/accesibility.js"></script>
+</html>
